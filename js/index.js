@@ -2,14 +2,12 @@ const burger = document.querySelector('.menu-burger');
 const menuMobile = document.querySelector('.menu-mobile');
 const scroll = document.querySelector('html,body');
 const select = document.querySelector('.info-select');
-const pagination = document.querySelector('.swiper-pagination')
 if (burger) {
     burger.addEventListener("click", function(e) {
         burger.classList.toggle('_activeBtn');
         menuMobile.classList.toggle('_active');
         select.classList.toggle('_select');
         scroll.classList.toggle('_lock');
-        pagination.classList.toggle('menu-list')
     })
 }
 
@@ -18,7 +16,6 @@ function Links() {
     menuMobile.classList.remove('_active');
     scroll.classList.remove('_lock');
     select.classList.remove('_select');
-    pagination.classList.remove('menu-list')
 }
 
 const link = document.querySelector(".link");
