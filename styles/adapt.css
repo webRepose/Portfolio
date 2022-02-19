@@ -4,6 +4,9 @@
     position: static;
     justify-content: space-between;
   }
+  .menu-list li {
+    margin-right: 10.8%;
+  }
 
   .info {
     padding-top: 0;
