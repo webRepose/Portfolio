@@ -98,7 +98,6 @@
 }
 .swip .image-slider__image img {
   max-width: 944px;
-  height: 400px;
 }
 
 .swiper-pagination {
@@ -110,10 +109,12 @@
   left: calc(72% + 150px) !important;
   top: -49%;
   position: relative;
+  color: gray;
 }
 
 .swiper-button-prev {
   left: calc(27% - 160px) !important;
   top: -55%;
   position: relative;
+  color: gray;
 }/*# sourceMappingURL=header.css.map */

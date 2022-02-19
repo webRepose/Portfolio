@@ -67,7 +67,7 @@ new Swiper('.swiper-container__png', {
     loop: true,
 
     autoplay: {
-        delay: 6000,
+        delay: 5000,
     },
     speed: 400,
 });
