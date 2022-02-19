@@ -1,0 +1,65 @@
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.78vw;
+    background-color: #424242;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #686868;
+    border-radius: 1.17vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: #828282;
+
+    &:hover {
+        color: black;
+        transition: 0.3s ease;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: clip;
+}
+
+._lock {
+    position: relative;
+    overflow: hidden;
+}
+
+.inner {
+    max-width: 944px;
+    margin: 0 auto;
+}
+
+#upbutton {
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+}
