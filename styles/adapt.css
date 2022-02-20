@@ -164,6 +164,9 @@
   }
 }
 @media (max-width: 320px) {
+  .menu-list {
+    margin-left: 0 !important;
+  }
   .menu-list li a {
     font-size: 30px;
   }
