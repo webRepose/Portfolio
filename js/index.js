@@ -77,3 +77,16 @@ window.onscroll = function() {
       document.getElementById('upbutton').style.display = 'none';
   }
 }
+
+window.addEventListener('load', async() => {
+    if (navigator.serviceWorker) {
+        try {
+            const reg = await navigator.serviceWorker.register('/js/sw.js');
+            console.log("sevice worker register success", reg)
+        } catch(e) {
+            console.log("sevice worker register fail")
+        }
+    }
+
+    await LoadPosts()
+})
