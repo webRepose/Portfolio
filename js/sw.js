@@ -1,16 +1,16 @@
 const cachName = 'cachApp'
 const assetURL = [
     '/',
-    '/portfolio.html',
-    '/ru.html',
-    '/styles/adapt.css',
-    '/styles/style.css',
-    '/styles/components/footer.css',
-    '/styles/components/header.css',
-    '/styles/components/main.css',
-    '/js/index.js',
-    '/img',
-    '/icons',
+    '/potfolio/portfolio.html',
+    '/potfolio/ru.html',
+    '/potfolio/styles/adapt.css',
+    '/potfolio/styles/style.css',
+    '/potfolio/styles/components/footer.css',
+    '/potfolio/styles/components/header.css',
+    '/potfolio/styles/components/main.css',
+    '/potfolio/js/index.js',
+    '/potfolio/img',
+    '/potfolio/icons',
 ]
 
 self.addEventListener('install', async event => {
