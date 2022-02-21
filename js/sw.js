@@ -10,10 +10,9 @@ const assetURL = [
     '/js/index.js'
 ]
 
-self.addEventListener('install', event => {
-    event.waitUntil(
-        caches.open(cachName).then(cache => cache.addAll(assetURL))
-    )
+self.addEventListener('install', async event => {
+    const cache = await caches.open(cachName);
+    await cache.addAll(assetURL);
 })
 
 self.addEventListener('activate', event => {

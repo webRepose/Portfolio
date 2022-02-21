@@ -88,5 +88,5 @@ window.addEventListener('load', async() => {
         }
     }
 
-    await LoadPosts()
+    // await loadPosts()
 })
