@@ -8,20 +8,6 @@
             margin-right: 10.8%;
         }
     }
-
-    .info {
-        padding-top: 0;
-    }
-
-    .skills {
-        margin-bottom: 60px;
-    }
-
-    .portfolio img {
-        margin: 44px auto;
-        max-width: 90%;
-        display: block;
-    }
 }
 
 @media (max-width:991px) {
@@ -54,6 +40,17 @@
     .info {
         width: 90%;
         margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .skills {
+        margin-bottom: 60px;
+    }
+
+    .portfolio img {
+        margin: 44px auto;
+        max-width: 90%;
+        display: block;
     }
 }
 
