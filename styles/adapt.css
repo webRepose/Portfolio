@@ -11,6 +11,10 @@
   .info {
     padding-top: 0;
   }
+
+  .skills {
+    margin-bottom: 60px;
+  }
 }
 @media (max-width: 991px) {
   .image-slider__image img {
@@ -136,7 +140,6 @@
   .skills {
     display: block;
     height: auto;
-    margin-bottom: 60px;
   }
   .skills-sub {
     padding-bottom: 50px;

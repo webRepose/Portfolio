@@ -12,6 +12,10 @@
     .info {
         padding-top: 0;
     }
+
+    .skills {
+        margin-bottom: 60px;
+    }
 }
 
 @media (max-width:991px) {
@@ -157,7 +161,6 @@
     .skills {
         display: block;
         height: auto;
-        margin-bottom: 60px;
 
         &-sub {
             padding-bottom: 50px;
