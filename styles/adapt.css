@@ -12,6 +12,38 @@
     padding-top: 0;
   }
 }
+@media (max-width: 991px) {
+  .image-slider__image img {
+    width: 90%;
+  }
+
+  .swiper-pagination {
+    top: 0;
+  }
+
+  .swiper-button-next,
+.swiper-button-prev {
+    display: none;
+  }
+
+  .about-title {
+    padding-top: 60px;
+  }
+
+  .about-text:last-child {
+    padding-bottom: 60px;
+  }
+
+  .swip {
+    margin-bottom: 40px;
+    height: auto;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 767px) {
   .menu {
     height: 0px;
@@ -99,32 +131,6 @@
   .info-description p {
     margin-top: 29px;
     font-size: 23px;
-  }
-
-  .image-slider__image img {
-    width: 90%;
-  }
-
-  .swiper-pagination {
-    top: 0;
-  }
-
-  .swiper-button-next,
-.swiper-button-prev {
-    display: none;
-  }
-
-  .about-title {
-    padding-top: 60px;
-  }
-
-  .about-text:last-child {
-    padding-bottom: 60px;
-  }
-
-  .swip {
-    margin-bottom: 40px;
-    height: auto;
   }
 
   .skills {
