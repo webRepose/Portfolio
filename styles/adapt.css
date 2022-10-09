@@ -2,7 +2,6 @@
   .swiper-button-next {
     left: calc(72% + 250px) !important;
   }
-
   .swiper-button-prev {
     left: calc(28% - 280px) !important;
   }
@@ -21,39 +20,31 @@
   .image-slider__image img {
     width: 90%;
   }
-
   .swiper-pagination {
     top: 0;
   }
-
   .swiper-button-next,
 .swiper-button-prev {
     display: none;
   }
-
   .about-title {
     padding-top: 60px;
   }
-
   .about-text:last-child {
     padding-bottom: 60px;
   }
-
   .swip {
     margin-bottom: 40px;
     height: auto;
   }
-
   .info {
     width: 90%;
     margin: 0 auto;
     padding-top: 0;
   }
-
   .skills {
     margin-bottom: 60px;
   }
-
   .portfolio img {
     margin: 44px auto;
     max-width: 90%;
@@ -100,17 +91,14 @@
     padding: 10px;
     font-size: 40px;
   }
-
   ._active {
     transform: translate(30%, 0);
     -webkit-transform: translate(30%, 0);
     -ms-transform: translate(30%, 0);
   }
-
   ._activeBtn div:nth-child(2) {
     display: none;
   }
-
   ._select {
     display: flex !important;
     position: relative;
@@ -121,7 +109,6 @@
     padding-top: 0;
     transition: 0.3s ease;
   }
-
   .info {
     width: 90%;
     margin: 0 auto;
@@ -148,7 +135,6 @@
     margin-top: 29px;
     font-size: 23px;
   }
-
   .skills {
     display: block;
     height: auto;
@@ -165,11 +151,9 @@
   .skills-rating img {
     width: 36px;
   }
-
   .portfolio {
     padding-bottom: 20px;
   }
-
   .contacts {
     margin-bottom: 60px;
   }
