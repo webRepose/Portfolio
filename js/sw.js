@@ -1,3 +1,16 @@
+// window.addEventListener('load', async() => {
+//     if (navigator.serviceWorker) {
+//         try {
+//             const reg = await navigator.serviceWorker.register('/portfolio/js/sw.js');
+//             console.log("sevice worker register success", reg)
+//         } catch(e) {
+//             console.log("sevice worker register fail")
+//         }
+//     }
+
+//     // await loadPosts()
+// })
+
 // const cachName = 'cachApp'
 // const assetURL = [
 //     '/',

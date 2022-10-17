@@ -80,7 +80,34 @@
         color: black;
     }
 
-    img {
+    &-dropDown {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        display: flex;
+        margin: 0 auto;
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+
+        div {
+            height: 40px;
+            width: 4px;
+            background-color: black;
+            border-radius: 20%;
+            margin-left: 5px;
+            transform: rotate(-30deg);
+            transition: all 0.3s ease-in;
+
+            &:last-child {
+                transform: rotate(30deg);
+                position: relative;
+                left: 9px;
+            }
+        }
+    }
+
+    &-screen {
         margin: 44px 0;
         max-width: 944px;
         height: auto;

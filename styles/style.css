@@ -194,7 +194,31 @@
 .portfolio a {
   color: black;
 }
-.portfolio img {
+.portfolio-dropDown {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+.portfolio-dropDown div {
+  height: 40px;
+  width: 4px;
+  background-color: black;
+  border-radius: 20%;
+  margin-left: 5px;
+  transform: rotate(-30deg);
+  transition: all 0.3s ease-in;
+}
+.portfolio-dropDown div:last-child {
+  transform: rotate(30deg);
+  position: relative;
+  left: 9px;
+}
+.portfolio-screen {
   margin: 44px 0;
   max-width: 944px;
   height: auto;
@@ -295,4 +319,26 @@ body {
   display: none;
   position: fixed;
   z-index: 999;
+}
+
+._disabledPortfolio {
+  display: none;
+}
+
+._activePortfolio {
+  display: block;
+}
+
+._activeDropDown div {
+  height: 40px;
+  width: 4px;
+  background-color: black;
+  border-radius: 20%;
+  margin-left: 5px;
+  transform: rotate(30deg);
+}
+._activeDropDown div:last-child {
+  transform: rotate(-30deg);
+  position: relative;
+  left: 9px;
 }/*# sourceMappingURL=style.css.map */

@@ -63,3 +63,28 @@ body {
     position: fixed;
     z-index: 999;
 }
+
+._disabledPortfolio {
+    display: none;
+}
+
+._activePortfolio {
+    display: block;
+}
+
+._activeDropDown {
+    div {
+        height: 40px;
+        width: 4px;
+        background-color: black;
+        border-radius: 20%;
+        margin-left: 5px;
+        transform: rotate(30deg);
+
+        &:last-child {
+            transform: rotate(-30deg);
+            position: relative;
+            left: 9px;
+        }
+    }
+}

@@ -3,7 +3,7 @@ const menuMobile = document.querySelector('.menu-mobile');
 const scroll = document.querySelector('html,body');
 const select = document.querySelector('.info-select');
 if (burger) {
-    burger.addEventListener("click", function(e) {
+    burger.addEventListener("click", function (e) {
         burger.classList.toggle('_activeBtn');
         menuMobile.classList.toggle('_active');
         select.classList.toggle('_select');
@@ -50,7 +50,7 @@ new Swiper('.swiper-container__png', {
     },
 
     pagination: {
-        el:'.swiper-pagination',
+        el: '.swiper-pagination',
         clickable: true,
     },
 
@@ -59,7 +59,7 @@ new Swiper('.swiper-container__png', {
         onlyInViewport: true,
         pageUpDown: true
     },
-    
+
     autoHeight: true,
     loop: true,
 
@@ -69,24 +69,24 @@ new Swiper('.swiper-container__png', {
     speed: 400,
 });
 
-window.onscroll = function() {
-  let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrolled > 100) {
-      document.getElementById('upbutton').style.display = 'block';
-  } else {
-      document.getElementById('upbutton').style.display = 'none';
-  }
+window.onscroll = function () {
+    let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrolled > 100) {
+        document.getElementById('upbutton').style.display = 'block';
+    } else {
+        document.getElementById('upbutton').style.display = 'none';
+    }
 }
 
-// window.addEventListener('load', async() => {
-//     if (navigator.serviceWorker) {
-//         try {
-//             const reg = await navigator.serviceWorker.register('/portfolio/js/sw.js');
-//             console.log("sevice worker register success", reg)
-//         } catch(e) {
-//             console.log("sevice worker register fail")
-//         }
-//     }
 
-//     // await loadPosts()
-// })
+const showPortfolio = document.querySelector('.portfolio-dropDown');
+const disabledPortfolio = document.querySelector('._disabledPortfolio');
+const activeDropDown = document.querySelector('._activeDropDown');
+
+if (showPortfolio) {
+    showPortfolio.addEventListener("click", function (y) {
+        disabledPortfolio.classList.toggle('_activePortfolio');
+        showPortfolio.classList.toggle('_activeDropDown');
+    }
+    )
+}
