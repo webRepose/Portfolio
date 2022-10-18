@@ -206,17 +206,17 @@
 }
 .portfolio-dropDown div {
   height: 40px;
-  width: 4px;
+  width: 5px;
   background-color: black;
   border-radius: 20%;
   margin-left: 5px;
-  transform: rotate(-30deg);
+  transform: rotate(-50deg);
   transition: all 0.3s ease-in;
 }
 .portfolio-dropDown div:last-child {
-  transform: rotate(30deg);
+  transform: rotate(50deg);
   position: relative;
-  left: 9px;
+  left: 19px;
 }
 .portfolio-screen {
   margin: 44px 0;
@@ -335,10 +335,10 @@ body {
   background-color: black;
   border-radius: 20%;
   margin-left: 5px;
-  transform: rotate(30deg);
+  transform: rotate(50deg);
 }
 ._activeDropDown div:last-child {
-  transform: rotate(-30deg);
+  transform: rotate(-50deg);
   position: relative;
-  left: 9px;
+  left: 19px;
 }/*# sourceMappingURL=style.css.map */

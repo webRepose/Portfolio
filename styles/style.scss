@@ -79,12 +79,12 @@ body {
         background-color: black;
         border-radius: 20%;
         margin-left: 5px;
-        transform: rotate(30deg);
+        transform: rotate(50deg);
 
         &:last-child {
-            transform: rotate(-30deg);
+            transform: rotate(-50deg);
             position: relative;
-            left: 9px;
+            left: 19px;
         }
     }
 }
