@@ -120,10 +120,17 @@
     }
 
     ._activeBtn {
-
         div {
+            transform: rotate(45deg);
+            position: absolute;
+            transition: all 0.3s ease-in;
+
             &:nth-child(2) {
                 display: none;
+            }
+
+            &:last-child {
+                transform: rotate(-45deg);
             }
         }
     }

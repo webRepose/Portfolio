@@ -96,8 +96,16 @@
     -webkit-transform: translate(30%, 0);
     -ms-transform: translate(30%, 0);
   }
+  ._activeBtn div {
+    transform: rotate(45deg);
+    position: absolute;
+    transition: all 0.3s ease-in;
+  }
   ._activeBtn div:nth-child(2) {
     display: none;
+  }
+  ._activeBtn div:last-child {
+    transform: rotate(-45deg);
   }
   ._select {
     display: flex !important;

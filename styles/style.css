@@ -194,6 +194,15 @@
 .portfolio a {
   color: black;
 }
+.portfolio-more {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  margin-left: 15px;
+}
+.portfolio-more_hide {
+  display: none;
+}
 .portfolio-dropDown {
   width: 50px;
   height: 50px;

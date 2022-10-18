@@ -83,10 +83,17 @@ const showPortfolio = document.querySelector('.portfolio-dropDown');
 const disabledPortfolio = document.querySelector('._disabledPortfolio');
 const activeDropDown = document.querySelector('._activeDropDown');
 
+const changeText = document.querySelector('.portfolio-more');
+const changeTextShow = document.querySelector('.portfolio-more_hide');
+
 if (showPortfolio) {
     showPortfolio.addEventListener("click", function (y) {
         disabledPortfolio.classList.toggle('_activePortfolio');
         showPortfolio.classList.toggle('_activeDropDown');
+        changeText.classList.toggle('_disabledPortfolio');
+        changeTextShow.classList.toggle('_activePortfolio');
+
+        // changeText.textContent = 'Hide';
     }
     )
 }
