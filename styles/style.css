@@ -330,15 +330,8 @@ body {
 }
 
 ._activeDropDown div {
-  height: 40px;
-  width: 4px;
-  background-color: black;
-  border-radius: 20%;
-  margin-left: 5px;
   transform: rotate(50deg);
 }
 ._activeDropDown div:last-child {
   transform: rotate(-50deg);
-  position: relative;
-  left: 19px;
 }/*# sourceMappingURL=style.css.map */
