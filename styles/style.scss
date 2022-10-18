@@ -2,6 +2,9 @@
 @import "components/main";
 @import "components/footer";
 
+$color1: #202226;
+$color2: #2B2E34;
+
 html,
 body {
     overflow-x: hidden;
@@ -81,3 +84,15 @@ body {
         }
     }
 }
+
+// ._activeDarkThemeFirst {
+//     background-color: $color1;
+// }
+
+// ._activeDarkThemeSecond {
+//     background-color: $color2;
+// }
+
+// :root {
+//     filter: invert(100%);
+// } 

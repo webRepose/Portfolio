@@ -198,13 +198,12 @@
   text-align: center;
   font-size: 14px;
   font-style: italic;
-  margin-left: 15px;
 }
 .portfolio-more_hide {
   display: none;
 }
 .portfolio-dropDown {
-  width: 50px;
+  width: 70px;
   height: 50px;
   padding: 10px;
   display: flex;

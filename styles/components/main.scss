@@ -84,7 +84,6 @@
         text-align: center;
         font-size: 14px;
         font-style: italic;
-        margin-left: 15px;
 
         &_hide {
             display: none;
@@ -92,9 +91,9 @@
     }
 
     &-dropDown {
-        width: 50px;
+        width: 70px;
         height: 50px;
-        padding: 10px;
+        padding: 13px;
         display: flex;
         margin: 0 auto;
         border: 0;
