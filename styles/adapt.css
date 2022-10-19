@@ -143,14 +143,12 @@
     margin-top: 29px;
     font-size: 23px;
   }
-  .skills {
-    display: block;
-    height: auto;
-  }
   .skills-sub {
     padding-bottom: 50px;
     margin: 0 auto;
-    width: 200px;
+  }
+  .skills-sub:last-child {
+    margin-top: 12px;
   }
   .skills-lang {
     width: 139px;
