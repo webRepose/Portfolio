@@ -237,7 +237,7 @@
 }
 .contacts-message {
   width: 180px;
-  height: 42px;
+  height: 52px;
   border-radius: 30px;
   border: 0;
   background-color: black;
@@ -324,12 +324,13 @@ body {
 }
 
 #upbutton {
-  bottom: 30px;
-  right: 30px;
+  bottom: 15px;
+  right: 15px;
   cursor: pointer;
   display: none;
   position: fixed;
   z-index: 999;
+  padding: 15px;
 }
 
 ._disabledPortfolio {
