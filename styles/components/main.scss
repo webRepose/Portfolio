@@ -1,5 +1,5 @@
 .outer {
-    background: #F6F6F6;
+    background-color: var(--BG-color2);
 }
 
 .about-title {
@@ -16,7 +16,7 @@
     font-size: 18px;
     padding: 0 20px;
     font-weight: 600;
-
+    
     &:last-child {
         margin-bottom: 0;
         padding-bottom: 120px;
@@ -77,7 +77,7 @@
     }
 
     a {
-        color: black;
+        color: var(--T-color);
     }
 
     &-more {
@@ -103,7 +103,7 @@
         div {
             height: 40px;
             width: 5px;
-            background-color: black;
+            background-color: var(--T-color);
             border-radius: 20%;
             margin-left: 5px;
             transform: rotate(-50deg);

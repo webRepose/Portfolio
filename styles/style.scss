@@ -2,9 +2,6 @@
 @import "components/main";
 @import "components/footer";
 
-$color1: #202226;
-$color2: #2B2E34;
-
 html,
 body {
     overflow-x: hidden;
@@ -33,12 +30,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #828282;
+    color: var(--T-color); 
+}
 
-    &:hover {
-        color: black;
-        transition: 0.3s ease;
-    }
+a:hover {
+    color: var(--T-color2);
+    transition: 0.3s ease;
 }
 
 body {
@@ -46,6 +43,8 @@ body {
     height: 100%;
     width: 100%;
     overflow: clip;
+    background-color: var(--BG-color3);
+    color: var(--T-color);
 }
 
 ._lock {
@@ -84,15 +83,3 @@ body {
         }
     }
 }
-
-// ._activeDarkThemeFirst {
-//     background-color: $color1;
-// }
-
-// ._activeDarkThemeSecond {
-//     background-color: $color2;
-// }
-
-// :root {
-//     filter: invert(100%);
-// } 

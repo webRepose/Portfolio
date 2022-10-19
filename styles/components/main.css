@@ -1,5 +1,5 @@
 .outer {
-  background: #F6F6F6;
+  background-color: var(--BG-color2);
 }
 
 .about-title {
@@ -70,7 +70,7 @@
   font-weight: 600;
 }
 .portfolio a {
-  color: black;
+  color: var(--T-color);
 }
 .portfolio-more {
   text-align: center;
@@ -93,7 +93,7 @@
 .portfolio-dropDown div {
   height: 40px;
   width: 5px;
-  background-color: black;
+  background-color: var(--T-color);
   border-radius: 20%;
   margin-left: 5px;
   transform: rotate(-50deg);

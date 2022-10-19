@@ -4,8 +4,8 @@
   height: 88px;
   position: fixed;
   z-index: 11;
-  background-color: white;
-  box-shadow: 1px 1px 5px #828282;
+  background-color: var(--BG-color);
+  box-shadow: 1px 1px 1px #828282;
 }
 .menu-list {
   text-align: center;
@@ -37,7 +37,7 @@
 .menu-burger div {
   width: 100%;
   height: 4px;
-  background-color: #828282;
+  background-color: var(--T-color);
   border-radius: 15px;
   margin-bottom: 10px;
 }
@@ -68,7 +68,7 @@
 .info-select div {
   width: 2px;
   height: 16px;
-  background-color: black;
+  background-color: #4c4c4d;
   margin-top: 3px;
 }
 .info-description {
@@ -121,7 +121,7 @@
 }
 
 .outer {
-  background: #F6F6F6;
+  background-color: var(--BG-color2);
 }
 
 .about-title {
@@ -192,7 +192,7 @@
   font-weight: 600;
 }
 .portfolio a {
-  color: black;
+  color: var(--T-color);
 }
 .portfolio-more {
   text-align: center;
@@ -215,7 +215,7 @@
 .portfolio-dropDown div {
   height: 40px;
   width: 5px;
-  background-color: black;
+  background-color: var(--T-color);
   border-radius: 20%;
   margin-left: 5px;
   transform: rotate(-50deg);
@@ -296,10 +296,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #828282;
+  color: var(--T-color);
 }
+
 a:hover {
-  color: black;
+  color: var(--T-color2);
   transition: 0.3s ease;
 }
 
@@ -308,6 +309,8 @@ body {
   height: 100%;
   width: 100%;
   overflow: clip;
+  background-color: var(--BG-color3);
+  color: var(--T-color);
 }
 
 ._lock {
