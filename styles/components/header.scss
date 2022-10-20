@@ -1,7 +1,7 @@
 .menu {
     width: 100%;
     left: 0;
-    height: 88px;
+    height: 68px;
     position: fixed;
     z-index: 11;
     background-color: var(--BG-color);
@@ -9,7 +9,7 @@
 
     &-list {
         text-align: center;
-        padding-top: 33px;
+        padding-top: 20px;
 
         li {
             display: inline-block;
