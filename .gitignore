@@ -5,10 +5,17 @@
 *.userosscache
 *.sln.docstates
 
-*\adapt.css
+# *\adapt.css
+# *.css.map
+# footer.scss
+# footer.css.map
+# add.scss
+
+.sass-cache/
 *.css.map
-footer.css
-footer.css.map
+*.sass.map
+*.scss.map
+*.scss
 
 
 # User-specific files (MonoDevelop/Xamarin Studio)
