@@ -19,7 +19,8 @@ const txt = {
         'portfolio-more2': 'Hide',
         'contacts2': 'Contacts',
         'like': 'Like me on Telegram, Vk, GitHub',
-        'contacts-text': 'Want to know more or just chat? You are welcome!',
+        'contacts-text': 'Want to know more or just chat?',
+        'contacts-text2': 'You are welcome!',
         'contacts-message': 'Send message',
     },
     ru: {
@@ -42,7 +43,8 @@ const txt = {
         'portfolio-more2': 'Скрыть',
         'contacts2': 'Контакты',
         'like': 'Мой Telegram, Vk, GitHub',
-        'contacts-text': 'Хотите узнать больше или просто по общаться? Добро пожаловать!',
+        'contacts-text': 'Хотите узнать больше или просто по общаться?',
+        'contacts-text2': ' Добро пожаловать!',
         'contacts-message': 'Отправьте сообщение',
     },
   };

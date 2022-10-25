@@ -7,6 +7,9 @@
 
 *\adapt.css
 *.css.map
+footer.css
+footer.css.map
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
