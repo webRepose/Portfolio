@@ -60,17 +60,21 @@
   display: inline-block;
   list-style: none;
 }
-.info-select li a {
+.info-select li button {
   font-size: 16px;
   font-weight: 600;
   padding: 5px;
   cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  color: var(--T-color2);
 }
 .info-select div {
   width: 2px;
   height: 16px;
   background-color: #4c4c4d;
-  margin-top: 3px;
+  margin-top: 5px;
+  padding: 1px;
 }
 .info-description {
   padding-top: 6px;

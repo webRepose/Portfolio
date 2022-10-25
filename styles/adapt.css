@@ -126,12 +126,13 @@
   .info-select {
     display: none;
   }
-  .info-select li a {
+  .info-select li button {
     font-size: 27px;
   }
   .info-select div {
     padding: 1px;
-    margin-top: 11px;
+    margin-top: 8px;
+    height: 20px;
   }
   .info-description {
     display: block;
