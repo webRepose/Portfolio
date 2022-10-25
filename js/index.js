@@ -49,7 +49,7 @@ new Swiper('.swiper-container__png', {
 
 window.onscroll = function () {
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrolled > 100) {
+    if (scrolled > 500) {
         document.getElementById('upbutton').style.display = 'block';
     } else {
         document.getElementById('upbutton').style.display = 'none';

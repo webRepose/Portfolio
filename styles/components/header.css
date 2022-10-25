@@ -64,6 +64,7 @@
   font-size: 16px;
   font-weight: 600;
   padding: 5px;
+  cursor: pointer;
 }
 .info-select div {
   width: 2px;
@@ -80,6 +81,7 @@
   font-size: 44px;
   line-height: 59px;
   font-weight: 700;
+  max-width: 200px;
 }
 .info-description p {
   margin-left: auto;

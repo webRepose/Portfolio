@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,8 @@
     <meta name="author" content="webRepose.github.io/portfolio/en">
     <meta name="description" content="Hello!, I'm Daniel - Frontend developer from Kazakhstan. 
     I'm interested in programming and everything connected with it">
+    <meta name="description" content="Привет!, Я Даниэль - Фронтенд разработчик из Казахстана.
+    Меня интересует программирование и все что связанно с ним.">
     <meta http-equiv="Cache-Control" content="max-age=31536000">
     <meta http-equiv="Content-Security-Policy" content="script-src-attr 'self';base-uri 'none';
     form-action 'self';object-src 'none';frame-src 'self';
@@ -20,7 +22,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/adapt.css">
-    <title>Daniel Agalakov</title>
+    <title id="title">Daniel Agalakov</title>
 </head>
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -29,11 +31,21 @@
             <div class="menu">
                 <nav class="menu-mobile">
                     <ul class="menu-list">
-                        <li><a title="Home" class="link" href="#Home">Home</a></li>
-                        <li><a title="About me" class="link" href="#AboutMe">About me</a></li>
-                        <li><a title="My skills" class="link" href="#Skills">Skills</a></li>
-                        <li><a title="My portfolio" class="link" href="#Portfolio">Portfolio</a></li>
-                        <li><a title="My contacts" class="link" href="#Contacts">Contacts</a></li>
+                        <li>
+                            <a id="home" title="Home" class="link" href="#Home">Home</a>
+                        </li>
+                        <li>
+                            <a id="about" title="About me" class="link" href="#AboutMe">About me</a>
+                        </li>
+                        <li>
+                            <a id="skills" title="My skills" class="link" href="#Skills">Skills</a>
+                        </li>
+                        <li>
+                            <a id="portfolio" title="My portfolio" class="link" href="#Portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a id="contacts" title="My contacts" class="link" href="#Contacts">Contacts</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -44,13 +56,13 @@
             </button>
             <div class="info">
                 <ul class="info-select">
-                    <li><a href="./ru">RU</a></li>
+                    <li><a id="e-lang-ru">RU</a></li>
                     <div></div>
-                    <li><a href="./en">ENG</a></li>
+                    <li><a id="e-lang-en">ENG</a></li>
                 </ul>
                 <div class="info-description">
-                    <h1>Daniel<br>Agalakov</h1>
-                    <p>Frontend programmer</p>
+                    <h1 id="myname">Daniel Agalakov</h1>
+                    <p id="myspecial">Frontend programmer</p>
                 </div>
             </div>
         </section>
@@ -83,16 +95,16 @@
         <section class="outer">
             <div class="inner">
                 <h2 id="AboutMe" class="about-title">About me</h2>
-                <p class="about-text">Hi, I'm Daniel – HTML/CSS/JS developer from Kazakhstan.<br>
+                <p id="about-text" class="about-text">Hi, I'm Daniel – HTML/CSS/JS developer from Kazakhstan.<br>
                     I'm interested in programming and everything connected with it.</p>
-                <p class="about-text">I'm studying at college "Computer Engineering"<br>third course.</p>
-                <p class="about-text">Ready for great projects <br>
+                <p id="about-text2" class="about-text">I'm studying at college "Computer Engineering"<br>third course.</p>
+                <p id="about-text3" class="about-text">Ready for great projects <br>
                     with wonderful people.</p>
             </div>
         </section>
         <section class="inner">
             <h2 id="Skills" class="about-title">Skills</h2>
-            <p class="about-text">I work in such languages and tools as</p>
+            <p id="skills-text" class="about-text">I work in such languages and tools as</p>
             <div class="skills">
                 <div class="skills-sub">
                     <a href="https://en.wikipedia.org/wiki/HTML5">
@@ -168,8 +180,8 @@
                                 src="./img/nerdify.webp" alt="Nerdify"></a>
                     </div>
                 </div>
-                <h3 class="portfolio-more">More</h3>
-                <h3 class="portfolio-more portfolio-more_hide">Hide</h3>
+                <h3 id="portfolio-more" class="portfolio-more">More</h3>
+                <h3 id="portfolio-more2" class="portfolio-more portfolio-more_hide">Hide</h3>
                 <button title="Viev more!" class="portfolio-dropDown">
                     <div></div>
                     <div></div>
@@ -180,18 +192,18 @@
     <footer>
         <section class="inner">
             <div id="Contacts" class="contacts">
-                <h2 class="about-title">Contacts</h2>
-                <p>Like me on<br>
+                <h2 id="contacts2" class="about-title">Contacts</h2>
+                <p id="like">Like me on<br>
                     Telegram, Vk, GitHub</p>
                 <div class="contacts-socials">
                     <a href="https://t.me/just_a_machine"><img src="./img/telegram-logo-png-png-file-svg-980.webp" alt="Telegram"></a>
                     <a href="https://vk.com/mnmmmh"><img src="./img/vk.webp" alt="Vk"></a>
                     <a href="https://github.com/webRepose"><img src="./img/github.webp" alt="GitHub"></a>
                 </div>
-                <p class="about-text">Want to know more or just chat?<br>
+                <p id="contacts-text" class="about-text">Want to know more or just chat?<br>
                     You are welcome!</p>
                 <button class="contacts-message" aria-command-name="send me">
-                    <a href="https://t.me/just_a_machine">
+                    <a id="contacts-message" href="https://t.me/just_a_machine">
                         Send message
                     </a>
                 </button>
@@ -203,6 +215,7 @@
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/lang.js"></script>
     <script src="js/sw.js"></script>
 </body>
 </html>
