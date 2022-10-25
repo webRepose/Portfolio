@@ -175,6 +175,14 @@
     font-size: 30px;
   }
 }
+@media (max-height: 668px) {
+  .menu-mobile li {
+    margin-bottom: 20px;
+  }
+  ._select {
+    top: 435px;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --BG-color:#202124;
