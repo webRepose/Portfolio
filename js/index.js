@@ -13,12 +13,12 @@ if (burger) {
 
 const links = document.querySelectorAll(".link")
 for (const item of links) {
-  item.addEventListener('click', function(del) {
-    burger.classList.remove('_activeBtn');
-    menuMobile.classList.remove('_active');
-    scroll.classList.remove('_lock');
-    select.classList.remove('_select');
-  })
+    item.addEventListener('click', function (del) {
+        burger.classList.remove('_activeBtn');
+        menuMobile.classList.remove('_active');
+        scroll.classList.remove('_lock');
+        select.classList.remove('_select');
+    })
 }
 
 new Swiper('.swiper-container__png', {
@@ -71,4 +71,32 @@ if (showPortfolio) {
         changeTextShow.classList.toggle('_activePortfolio');
     }
     )
+}
+
+// const num = 42;
+// localStorage.setItem('number', num)
+// const lok = localStorage.getItem('number')
+// console.log(lok)
+// localStorage.removeItem('number')
+
+
+// const attrEn = document.getElementById('e-lang-en')
+// const attrRu = document.getElementById('e-lang-ru')
+const attr = document.querySelector('#home')
+
+// if(attrRu) {
+//     attrRu.addEventListener('click', function(){
+//         attr.setAttribute('title', 'Домой')
+//     })
+// } if(attrEn) {
+//     attrEn.addEventListener('click', function(){
+//         attr.setAttribute('title', 'Home')
+//     })
+// }
+
+if(window.localStorage.getItem('lang') == 'en') {
+    attr.setAttribute('title', 'Home')
+}
+else if (window.localStorage.getItem('lang') == 'ru') {
+    attr.setAttribute('title', 'Домой')
 }
