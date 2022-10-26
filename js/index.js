@@ -82,7 +82,7 @@ if (showPortfolio) {
 
 // const attrEn = document.getElementById('e-lang-en')
 // const attrRu = document.getElementById('e-lang-ru')
-const attr = document.querySelector('#home')
+// const attr = document.querySelector('#home')
 
 // if(attrRu) {
 //     attrRu.addEventListener('click', function(){
@@ -94,9 +94,9 @@ const attr = document.querySelector('#home')
 //     })
 // }
 
-if(window.localStorage.getItem('lang') == 'en') {
-    attr.setAttribute('title', 'Home')
-}
-else if (window.localStorage.getItem('lang') == 'ru') {
-    attr.setAttribute('title', 'Домой')
-}
+// if(window.localStorage.getItem('lang') == 'en') {
+//     attr.setAttribute('title', 'Home')
+// }
+// else if (window.localStorage.getItem('lang') == 'ru') {
+//     attr.setAttribute('title', 'Домой')
+// }
