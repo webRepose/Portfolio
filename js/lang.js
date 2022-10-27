@@ -66,3 +66,13 @@ var lang = (window.hasOwnProperty('localStorage') && window.localStorage.getItem
 setLang(lang);
 
 var userLang = navigator.language || navigator.userLanguage; 
+
+const ua = window.navigator.userAgent;
+
+if (ua.indexOf("MSIE ") > 0 || ua.indexOf("Trident") > 0) {
+    window.location.href = "microsoft-edge:" + window.location.href;
+
+    setTimeout(function () {
+        window.location.href = "https://support.microsoft.com/en-us/microsoft-edge/this-website-doesn-t-work-in-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554";
+    }, 0);
+}
