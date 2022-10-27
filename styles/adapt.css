@@ -123,7 +123,7 @@
   .info-select {
     display: none;
   }
-  .info-select li button {
+  .info-select button {
     font-size: 27px;
   }
   .info-select div {
@@ -144,9 +144,6 @@
   .skills-sub {
     padding-bottom: 50px;
     margin: 0 auto;
-  }
-  .skills-sub:last-child {
-    margin-top: 12px;
   }
   .skills-lang {
     width: 139px;

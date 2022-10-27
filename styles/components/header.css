@@ -55,11 +55,7 @@
   width: 78px;
   margin-left: auto;
 }
-.info-select li {
-  display: inline-block;
-  list-style: none;
-}
-.info-select li button {
+.info-select button {
   font-size: 16px;
   font-weight: 600;
   padding: 5px;
