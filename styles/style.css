@@ -222,7 +222,7 @@
   border-radius: 20%;
   margin-left: 5px;
   transform: rotate(-50deg);
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 .portfolio-dropDown div:last-child {
   transform: rotate(50deg);

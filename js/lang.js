@@ -66,14 +66,3 @@ var lang = (window.hasOwnProperty('localStorage') && window.localStorage.getItem
 setLang(lang);
 
 var userLang = navigator.language || navigator.userLanguage; 
-
-
-const ua = window.navigator.userAgent;
-
-if (ua.indexOf("MSIE ") > 0 || ua.indexOf("Trident") > 0) {
-    window.location.href = "microsoft-edge:" + window.location.href;
-
-    setTimeout(function () {
-        window.location.href = "https://support.microsoft.com/zh-tw/office";
-    }, 0);
-}
