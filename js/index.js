@@ -73,13 +73,6 @@ if (showPortfolio) {
     )
 }
 
-// const num = 42;
-// localStorage.setItem('number', num)
-// const lok = localStorage.getItem('number')
-// console.log(lok)
-// localStorage.removeItem('number')
-
-
 // const attrEn = document.getElementById('e-lang-en')
 // const attrRu = document.getElementById('e-lang-ru')
 // const attr = document.querySelector('#home')

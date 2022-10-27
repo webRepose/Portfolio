@@ -8,16 +8,15 @@
   box-shadow: 1px 1px 1px #828282;
 }
 .menu-list {
-  text-align: center;
-  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 944px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .menu-list li {
   display: inline-block;
   list-style: none;
-  margin-right: 128px;
-}
-.menu-list li:last-child {
-  margin-right: 0;
 }
 .menu-list li a {
   font-size: 18px;
@@ -105,6 +104,7 @@
 }
 .swip .image-slider__image img {
   max-width: 944px;
+  height: auto;
 }
 
 .swiper-pagination {

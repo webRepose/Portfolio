@@ -12,9 +12,6 @@
     position: static;
     justify-content: space-between;
   }
-  .menu-list li {
-    margin-right: 10.8%;
-  }
 }
 @media (max-width: 991px) {
   .image-slider__image img {
