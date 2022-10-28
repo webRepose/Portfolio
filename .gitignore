@@ -5,12 +5,12 @@
 *.userosscache
 *.sln.docstates
 
+
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
 *.scss
-
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
