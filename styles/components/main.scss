@@ -1,0 +1,126 @@
+.outer {
+    background-color: var(--BG-color2);
+}
+
+.about-title {
+    text-align: center;
+    padding-top: 121px;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.about-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: 600;
+    
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 120px;
+    }
+}
+
+.skills {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 63px 0 120px 0;
+    flex-wrap: wrap;
+
+    &-lang {
+        width: 89px;
+        height: 89px;
+        margin: 0 auto 24px auto;
+        display: block;
+    }
+
+    &-sub {
+        width: 220px;
+        height: 100%;
+        padding-bottom: 120px;
+
+        p {
+            font-size: 16px;
+            color: #828282;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    &-rating {
+        display: flex;
+        margin: 40px auto 0 auto;
+        width: 150px;
+
+        img {
+            width: 26px;
+            height: auto;
+            margin-right: 9px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.portfolio {
+    padding-bottom: 66px;
+
+    p {
+        text-decoration: underline black;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    a {
+        color: var(--T-color);
+    }
+
+    &-more {
+        text-align: center;
+        font-size: 14px;
+        font-style: italic;
+
+        &_hide {
+            display: none;
+        }
+    }
+
+    &-dropDown {
+        width: 70px;
+        height: 50px;
+        padding: 13px;
+        display: flex;
+        margin: 0 auto;
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+
+        div {
+            height: 40px;
+            width: 5px;
+            background-color: var(--T-color);
+            border-radius: 20%;
+            margin-left: 5px;
+            transform: rotate(-50deg);
+            transition: all 0.2s ease-in;
+
+            &:last-child {
+                transform: rotate(50deg);
+                position: relative;
+                left: 19px;
+            }
+        }
+    }
+
+    &-screen {
+        margin: 44px 0;
+        max-width: 944px;
+        height: auto;
+    }
+}

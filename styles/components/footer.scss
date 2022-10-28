@@ -1,0 +1,40 @@
+.contacts {
+    margin-bottom: 120px;
+
+    &-message {
+        width: 180px;
+        height: 52px;
+        border-radius: 30px;
+        border: 0;
+        background-color: black;
+        font-weight: 600;
+        font-size: 18px;
+        display: block;
+        margin: 10px auto 0 auto;
+        cursor: pointer;
+
+        a,
+        a:hover {
+            color: white;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: #828282;
+        text-align: center;
+    }
+
+    &-socials {
+        max-width: 202px;
+        height: 41px;
+        margin: 25px auto 62px auto;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 40px;
+            height: auto;
+        }
+    }
+}

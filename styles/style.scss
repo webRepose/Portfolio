@@ -1,0 +1,88 @@
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.78vw;
+    background-color: #424242;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #686868;
+    border-radius: 1.17vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: var(--T-color); 
+}
+
+a:hover {
+    color: var(--T-color2);
+    transition: 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: clip;
+    background-color: var(--BG-color3);
+    color: var(--T-color);
+    font-display: optional;
+}
+
+._lock {
+    position: relative;
+    overflow: hidden;
+}
+
+.inner {
+    max-width: 944px;
+    margin: 0 auto;
+}
+
+#upbutton {
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding: 15px;
+}
+
+._none {
+    display: none;
+}
+
+._activePortfolio {
+    display: block;
+}
+
+._activeDropDown {
+    div {
+        transform: rotate(50deg);
+
+        &:last-child {
+            transform: rotate(-50deg);
+        }
+    }
+}
