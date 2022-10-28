@@ -314,6 +314,7 @@ body {
   overflow: clip;
   background-color: var(--BG-color3);
   color: var(--T-color);
+  font-display: optional;
 }
 
 ._lock {
@@ -336,7 +337,7 @@ body {
   padding: 15px;
 }
 
-._disabledPortfolio {
+._none {
   display: none;
 }
 

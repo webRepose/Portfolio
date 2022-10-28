@@ -1,3 +1,4 @@
+// menu burger
 const burger = document.querySelector('.menu-burger');
 const menuMobile = document.querySelector('.menu-mobile');
 const scroll = document.querySelector('html,body');
@@ -21,6 +22,8 @@ for (const item of links) {
     })
 }
 
+
+// swiper libary
 new Swiper('.swiper-container__png', {
     navigation: {
         nextEl: '.swiper-button-next',
@@ -47,6 +50,7 @@ new Swiper('.swiper-container__png', {
     speed: 400,
 });
 
+// up on click button
 window.onscroll = function () {
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if (scrolled > 500) {
@@ -56,9 +60,9 @@ window.onscroll = function () {
     }
 }
 
-
+// drop down fun portfolio work
 const showPortfolio = document.querySelector('.portfolio-dropDown');
-const disabledPortfolio = document.querySelector('._disabledPortfolio');
+const disabledPortfolio = document.querySelector('._none');
 const activeDropDown = document.querySelector('._activeDropDown');
 const changeText = document.querySelector('.portfolio-more');
 const changeTextShow = document.querySelector('.portfolio-more_hide');
@@ -67,29 +71,27 @@ if (showPortfolio) {
     showPortfolio.addEventListener("click", function (y) {
         disabledPortfolio.classList.toggle('_activePortfolio');
         showPortfolio.classList.toggle('_activeDropDown');
-        changeText.classList.toggle('_disabledPortfolio');
+        changeText.classList.toggle('_none');
         changeTextShow.classList.toggle('_activePortfolio');
     }
     )
 }
 
-// const attrEn = document.getElementById('e-lang-en')
-// const attrRu = document.getElementById('e-lang-ru')
-// const attr = document.querySelector('#home')
+// preloader need refactoring
 
-// if(attrRu) {
-//     attrRu.addEventListener('click', function(){
-//         attr.setAttribute('title', 'Домой')
-//     })
-// } if(attrEn) {
-//     attrEn.addEventListener('click', function(){
-//         attr.setAttribute('title', 'Home')
-//     })
-// }
+const linkHide = document.querySelectorAll('.link');
+const linkPreloader = document.querySelectorAll('.link-preloader')
+for (const noneLink of linkHide) {
+    noneLink.classList.add('_none');
+}
 
-// if(window.localStorage.getItem('lang') == 'en') {
-//     attr.setAttribute('title', 'Home')
-// }
-// else if (window.localStorage.getItem('lang') == 'ru') {
-//     attr.setAttribute('title', 'Домой')
-// }
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        for (const noneHide of linkHide) {
+            noneHide.classList.remove('_none');
+        }
+        for (const noneLinkPreloader of linkPreloader) {
+            noneLinkPreloader.classList.add('_none');
+        }
+    }, [2000]);
+})

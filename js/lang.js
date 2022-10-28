@@ -49,6 +49,7 @@ const txt = {
     },
   };
 
+// change lang fun
 document.getElementById('e-lang-en').addEventListener('click', setLang.bind(null,'en'));
 document.getElementById('e-lang-ru').addEventListener('click', setLang.bind(null,'ru'));
 
@@ -67,8 +68,9 @@ setLang(lang);
 
 var userLang = navigator.language || navigator.userLanguage; 
 
-const ua = window.navigator.userAgent;
 
+// Ie to Edge
+const ua = window.navigator.userAgent;
 if (ua.indexOf("MSIE ") > 0 || ua.indexOf("Trident") > 0) {
     window.location.href = "microsoft-edge:" + window.location.href;
 
