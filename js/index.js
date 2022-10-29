@@ -79,10 +79,10 @@ if (showPortfolio) {
 
 // preloader need refactoring
 
-const preloader = document.querySelector('.preloader')
+const preloader = document.querySelector('.preloader');
 const preloaderLock = document.querySelector('html,body');
-preloaderLock.classList.add('_lock')
+preloaderLock.classList.add('_lock');
 window.addEventListener('load', ()=> {
-    preloader.classList.add('_none')
-    preloaderLock.classList.remove('_lock')
+    preloader.classList.add('_none');
+    preloaderLock.classList.remove('_lock');
 })
