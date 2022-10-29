@@ -80,18 +80,53 @@ if (showPortfolio) {
 // preloader need refactoring
 
 const linkHide = document.querySelectorAll('.link');
-const linkPreloader = document.querySelectorAll('.link-preloader')
-for (const noneLink of linkHide) {
-    noneLink.classList.add('_none');
-}
+const linkPreloader = document.querySelectorAll('.preloader-nav')
+const infoSelectPreload = document.querySelector('.preloader-select');
+const infoSelectShow = document.querySelector('.info-select');
 
 window.addEventListener('load', () => {
-    setTimeout(() => {
         for (const noneHide of linkHide) {
             noneHide.classList.remove('_none');
         }
         for (const noneLinkPreloader of linkPreloader) {
-            noneLinkPreloader.classList.add('_none');
+            noneLinkPreloader.classList.remove('preloader-nav');
         }
-    }, [2000]);
+
+        infoSelectPreload.classList.remove('preloader-select')
+        infoSelectShow.classList.remove('_none')
 })
+
+// window.addEventListener('load', () => {
+//     setTimeout(()=>{
+//         for (const noneHide of linkHide) {
+//             noneHide.classList.remove('_none');
+//         }
+//         for (const noneLinkPreloader of linkPreloader) {
+//             noneLinkPreloader.classList.remove('preloader-nav');
+//         }
+
+//         infoSelectPreload.classList.remove('preloader-select')
+//         infoSelectShow.classList.remove('_none')
+//     }, [1000]);
+// })
+
+const preloader = document.querySelector('.preloader')
+const preloaderLock = document.querySelector('html,body');
+preloaderLock.classList.add('_lock')
+window.addEventListener('load', ()=> {
+    preloader.classList.add('_none')
+    preloaderLock.classList.remove('_lock')
+})
+
+
+// const preloader = document.querySelector('.preloader')
+// const preloaderLock = document.querySelector('html,body');
+// preloaderLock.classList.add('_lock')
+// setTimeout(()=> {
+//     window.addEventListener('load', ()=> {
+//         console.log(5545)
+//         preloader.style.disply = 'display:none';
+//         preloader.classList.add('_none')
+//         preloaderLock.classList.remove('_lock')
+//     })
+// }, [1000])

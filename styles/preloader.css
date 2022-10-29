@@ -1,6 +1,40 @@
-.link-preloader {
-  width: 100px;
-  height: 30px;
-  border-radius: 15px;
+@-webkit-keyframes preloadere {
+  100% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes preloadere {
+  100% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+.preloader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   background-color: #2e2e2e;
+  z-index: 100;
+}
+.preloader-place {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.preloader-e {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid var(--BG-color3);
+  -webkit-animation: 1s preloadere infinite ease-out;
+          animation: 1s preloadere infinite ease-out;
+  border-top-color: transparent;
+  z-index: 101;
 }/*# sourceMappingURL=preloader.css.map */

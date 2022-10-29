@@ -17,9 +17,10 @@
     style-src-attr 'self' 'unsafe-inline';media-src 'self';
     upgrade-insecure-requests; script-src 'self' https://unpkg.com/swiper@8/swiper-bundle.min.js 'nonce-qwerty1234' 'unsafe-inline';">
     <!--  font-src 'self'; default-src 'self'; style-src 'self' 'report-sample'; script-src-elem 'self'  'nonce-' '+key_pass+'; frame-ancestors 'self'; style-src-elem 'self' 'unsafe-inline'; -->
-    <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+    <!-- <link rel="manifest" crossorigin="use-credentials" href="manifest.json"> -->
     <link rel="icon" href="./img/up3.webp" type="image/x-icon">
     <link rel="apple-touch-icon" href="../img/starG.webp">
+    <link rel="preload" href="styles/preloader.css" as="style">
     <link rel="stylesheet" href="styles/preloader.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -27,31 +28,32 @@
     <title id="title">Daniel Agalakov</title>
 </head>
 <body>
+    <section class="preloader">
+        <div class="preloader-place">
+            <div class="preloader-e">
+            </div>
+        </div>
+    </section>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <header id="Home">
         <section class="inner">
             <div class="menu">
                 <nav class="menu-mobile">
                     <ul class="menu-list">
-                        <li>
-                            <div class="link-preloader"></div>
-                            <a id="home" title="Home" class="link" href="#Home">Home</a>
+                        <li class="preloader-nav">
+                            <a id="home" title="Home" class="link _none" href="#Home">Home</a>
                         </li>
-                        <li>
-                            <div class="link-preloader"></div>
-                            <a id="about" title="About me" class="link" href="#AboutMe">About me</a>
+                        <li class="preloader-nav">
+                            <a id="about" title="About me" class="link _none href="#AboutMe">About me</a>
                         </li>
-                        <li>
-                            <div class="link-preloader"></div>
-                            <a id="skills" title="My skills" class="link" href="#Skills">Skills</a>
+                        <li class="preloader-nav">
+                            <a id="skills" title="My skills" class="link _none href="#Skills">Skills</a>
                         </li>
-                        <li>
-                            <div class="link-preloader"></div>
-                            <a id="portfolio" title="My portfolio" class="link" href="#Portfolio">Portfolio</a>
+                        <li class="preloader-nav">
+                            <a id="portfolio" title="My portfolio" class="link _none href="#Portfolio">Portfolio</a>
                         </li>
-                        <li>
-                            <div class="link-preloader"></div>
-                            <a id="contacts" title="My contacts" class="link" href="#Contacts">Contacts</a>
+                        <li class="preloader-nav">
+                            <a id="contacts" title="My contacts" class="link _none href="#Contacts">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -62,10 +64,12 @@
                 <div></div>
             </button>
             <section class="info">
-                <div class="info-select">
-                    <button id="e-lang-ru">RU</button>
-                    <div></div>
-                    <button id="e-lang-en">ENG</button>
+                <div class="preloader-select">
+                    <div class="info-select _none">
+                        <button id="e-lang-ru">RU</button>
+                        <div></div>
+                        <button id="e-lang-en">ENG</button>
+                </div>
                 </div>
                 <div class="info-description">
                     <h1 id="myname">Daniel Agalakov</h1>
