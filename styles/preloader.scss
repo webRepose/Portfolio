@@ -21,12 +21,12 @@
         transform: translate(-50%, -50%);
     }
 
-    &-e {
+    &-object {
         position:relative;
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        border: 10px solid var(--BG-color3);
+        border: 10px solid blueviolet;
         animation: 1s preloadere infinite ease-out;
         border-top-color: transparent;
         z-index: 101;
