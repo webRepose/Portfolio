@@ -7,6 +7,7 @@
   background-color: var(--BG-color);
   box-shadow: 1px 1px 1px #828282;
 }
+
 .menu-list {
   display: flex;
   justify-content: space-between;
@@ -23,6 +24,7 @@
   font-weight: 600;
   padding: 10px;
 }
+
 .menu-burger {
   display: none;
   width: 40px;
@@ -49,6 +51,7 @@
   height: 188.5px;
   padding-top: 88px;
 }
+
 .info-select {
   display: flex;
   width: 78px;
@@ -70,6 +73,7 @@
   margin-top: 5px;
   padding: 1px;
 }
+
 .info-description {
   padding-top: 6px;
   width: 100%;

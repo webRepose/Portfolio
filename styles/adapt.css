@@ -20,8 +20,10 @@
   .swiper-pagination {
     top: 0;
   }
-  .swiper-button-next,
-.swiper-button-prev {
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
     display: none;
   }
   .about-title {
@@ -46,6 +48,7 @@
     margin: 44px auto;
     max-width: 90%;
     display: block;
+    height: auto;
   }
 }
 @media (max-width: 767px) {
@@ -185,7 +188,7 @@
     --T-color2: #828282;
     --BG-color2:#202226;
     --BG-color3:#1b1b1d;
-    --BG-colorPreload:#2e2e2e ;
+    --BG-colorPreload: #2e2e2e;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -194,6 +197,6 @@
     --T-color: black;
     --BG-color2: #F6F6F6;
     --T-color2: #828282;
-    --BG-colorPreload: #F6F6F6;
+    --BG-colorPreload:#F6F6F6;
   }
 }/*# sourceMappingURL=adapt.css.map */

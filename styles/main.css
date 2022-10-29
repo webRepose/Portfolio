@@ -63,9 +63,15 @@
 .portfolio {
   padding-bottom: 66px;
 }
+.portfolio-screen {
+  height: auto;
+  margin: 44px auto;
+  max-width: 90%;
+  display: block;
+}
 .portfolio p {
   -webkit-text-decoration: underline black;
-          text-decoration: underline black;
+  text-decoration: underline black;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -104,9 +110,4 @@
   transform: rotate(50deg);
   position: relative;
   left: 19px;
-}
-.portfolio-screen {
-  margin: 44px 0;
-  max-width: 944px;
-  height: auto;
 }/*# sourceMappingURL=main.css.map */

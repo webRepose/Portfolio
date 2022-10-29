@@ -34,7 +34,7 @@
   border-radius: 50%;
   border: 10px solid blueviolet;
   -webkit-animation: 1s preloadere infinite ease-out;
-          animation: 1s preloadere infinite ease-out;
+  animation: 1s preloadere infinite ease-out;
   border-top-color: transparent;
   z-index: 101;
 }/*# sourceMappingURL=preloader.css.map */
