@@ -185,6 +185,7 @@
     --T-color2: #828282;
     --BG-color2:#202226;
     --BG-color3:#1b1b1d;
+    --BG-colorPreload:#2e2e2e ;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -193,5 +194,6 @@
     --T-color: black;
     --BG-color2: #F6F6F6;
     --T-color2: #828282;
+    --BG-colorPreload: #F6F6F6;
   }
 }/*# sourceMappingURL=adapt.css.map */
