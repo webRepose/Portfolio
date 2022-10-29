@@ -7,9 +7,9 @@
 
 
 .sass-cache/
-*footer.css.map
-*header.css.map
-*main.css.map
+# *footer.css.map
+# *header.css.map
+# *main.css.map
 *.sass.map
 *.scss.map
 *.scss
