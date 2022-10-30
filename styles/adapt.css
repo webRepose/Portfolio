@@ -12,6 +12,9 @@
     position: static;
     justify-content: space-between;
   }
+  .info {
+    padding-top: 18px;
+  }
 }
 @media (max-width: 991px) {
   .image-slider__image img {
@@ -39,7 +42,9 @@
   .info {
     width: 90%;
     margin: 0 auto;
-    padding-top: 0;
+  }
+  .menu-list {
+    max-width: 90%;
   }
   .skills {
     margin-bottom: 60px;
@@ -78,18 +83,18 @@
     padding: 0 30px 30px 0;
     overflow: auto;
   }
-  .menu-mobile .menu-list {
+  .menu li {
+    margin: 0 0 50px 0;
+  }
+  .menu li a {
+    padding: 10px;
+    font-size: 40px;
+  }
+  .menu-list {
     padding-top: 150px;
     display: block;
     max-width: 210px;
     margin-left: 20px;
-  }
-  .menu-mobile li {
-    margin: 0 0 50px 0;
-  }
-  .menu-mobile li a {
-    padding: 10px;
-    font-size: 40px;
   }
   ._active {
     transform: translate(30%, 0);

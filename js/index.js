@@ -77,7 +77,7 @@ if (showPortfolio) {
     )
 }
 
-// preloader need refactoring
+// preloader
 
 const preloader = document.querySelector('.preloader');
 const preloaderLock = document.querySelector('html,body');
