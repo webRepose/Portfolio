@@ -79,25 +79,45 @@ if (ua.indexOf("MSIE ") > 0 || ua.indexOf("Trident") > 0) {
     }, 0);
 }
 
-// lang = window.localStorage.setItem('attr', lang)
-
-
-if(lang == 'en') {
-console.log('en')
-  document.querySelector('#home').setAttribute('title', 'Home')
-  document.querySelector('#about').setAttribute('title', 'About me')
-  document.querySelector('#skills').setAttribute('title', 'Skills')
-  document.querySelector('#portfolio').setAttribute('title', 'Portfolio')
-  document.querySelector('#contacts').setAttribute('title', 'Contacts')
-} if (lang == 'ru') {
-console.log('ru')
-  document.querySelector('#home').setAttribute('title', 'Домой')
-  document.querySelector('#about').setAttribute('title', 'Обо мне')
-  document.querySelector('#skills').setAttribute('title', 'Навыки')
-  document.querySelector('#portfolio').setAttribute('title', 'Портфолио')
-  document.querySelector('#contacts').setAttribute('title', 'Контакты')
+// change attr fun
+function ruTitle() {
+  document.querySelector('#home').setAttribute('title', 'Домой');
+  document.querySelector('#about').setAttribute('title', 'Обо мне');
+  document.querySelector('#skills').setAttribute('title', 'Навыки');
+  document.querySelector('#portfolio').setAttribute('title', 'Портфолио');
+  document.querySelector('#contacts').setAttribute('title', 'Контакты');
+  document.querySelector('#HTML5').setAttribute('href', 'https://ru.wikipedia.org/wiki/HTML5');
+  document.querySelector('#CSS3').setAttribute('href', 'https://ru.wikipedia.org/wiki/CSS');
+  document.querySelector('#SCSS').setAttribute('href', 'https://ru.wikipedia.org/wiki/Sass');
+  document.querySelector('#GIT').setAttribute('href', 'https://ru.wikipedia.org/wiki/GitLab');
+  document.querySelector('#contacts-message').setAttribute('title', 'Отправить сообщение');
+}
+function enTitle() {
+  document.querySelector('#home').setAttribute('title', 'Home');
+  document.querySelector('#about').setAttribute('title', 'About me');
+  document.querySelector('#skills').setAttribute('title', 'Skills');
+  document.querySelector('#portfolio').setAttribute('title', 'Portfolio');
+  document.querySelector('#contacts').setAttribute('title', 'Contacts');
+  document.querySelector('#HTML5').setAttribute('href', 'https://en.wikipedia.org/wiki/HTML5');
+  document.querySelector('#CSS3').setAttribute('href', 'https://en.wikipedia.org/wiki/CSS');
+  document.querySelector('#SCSS').setAttribute('href', 'https://en.wikipedia.org/wiki/Sass');
+  document.querySelector('#GIT').setAttribute('href', 'https://en.wikipedia.org/wiki/GitLab');
+  document.querySelector('#contacts-message').setAttribute('title', 'Send message');
 }
 
-// window.addEventListener('storage', (event) => {
-//   localStorage.setItem(lang, lang)
-// });
+if(lang == 'en') {
+enTitle();
+} else {
+ruTitle();
+}
+
+const ruClick = document.getElementById('e-lang-ru');
+const enClick = document.getElementById('e-lang-en');
+
+enClick.addEventListener('click', ()=> {
+  enTitle();
+})
+ruClick.addEventListener('click', ()=> {
+  ruTitle();
+})
+
