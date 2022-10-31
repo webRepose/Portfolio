@@ -91,6 +91,7 @@ function ruTitle() {
   document.querySelector('#SCSS').setAttribute('href', 'https://ru.wikipedia.org/wiki/Sass');
   document.querySelector('#GIT').setAttribute('href', 'https://ru.wikipedia.org/wiki/GitLab');
   document.querySelector('#contacts-message').setAttribute('title', 'Отправить сообщение');
+  document.querySelector('.portfolio-dropDown').setAttribute('title', 'Посмотреть еще!');
 }
 function enTitle() {
   document.querySelector('#home').setAttribute('title', 'Home');
@@ -103,6 +104,7 @@ function enTitle() {
   document.querySelector('#SCSS').setAttribute('href', 'https://en.wikipedia.org/wiki/Sass');
   document.querySelector('#GIT').setAttribute('href', 'https://en.wikipedia.org/wiki/GitLab');
   document.querySelector('#contacts-message').setAttribute('title', 'Send message');
+  document.querySelector('.portfolio-dropDown').setAttribute('title', 'View more!');
 }
 
 if(lang == 'en') {
