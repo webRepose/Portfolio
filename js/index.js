@@ -83,6 +83,6 @@ const preloader = document.querySelector('.preloader');
 const preloaderLock = document.querySelector('html,body');
 preloaderLock.classList.add('_lock');
 window.addEventListener('load', ()=> {
-    preloader.classList.add('_none');
+    preloader.remove()
     preloaderLock.classList.remove('_lock');
 })
