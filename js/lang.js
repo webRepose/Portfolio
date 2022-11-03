@@ -92,6 +92,7 @@ function ruTitle() {
   document.querySelector('#GIT').setAttribute('href', 'https://ru.wikipedia.org/wiki/GitLab');
   document.querySelector('#contacts-message').setAttribute('title', 'Отправить сообщение');
   document.querySelector('.portfolio-dropDown').setAttribute('title', 'Посмотреть еще!');
+  document.querySelector('html').setAttribute('lang', 'ru');
 }
 function enTitle() {
   document.querySelector('#home').setAttribute('title', 'Home');
@@ -105,6 +106,7 @@ function enTitle() {
   document.querySelector('#GIT').setAttribute('href', 'https://en.wikipedia.org/wiki/GitLab');
   document.querySelector('#contacts-message').setAttribute('title', 'Send message');
   document.querySelector('.portfolio-dropDown').setAttribute('title', 'View more!');
+  document.querySelector('html').setAttribute('lang', 'en');
 }
 
 if(lang == 'en') {

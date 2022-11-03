@@ -62,14 +62,14 @@ window.onscroll = function () {
 
 // drop down fun portfolio work
 const showPortfolio = document.querySelector('.portfolio-dropDown');
-const disabledPortfolio = document.querySelector('._none');
+const none = document.querySelector('._none');
 const activeDropDown = document.querySelector('._activeDropDown');
 const changeText = document.querySelector('.portfolio-more');
 const changeTextShow = document.querySelector('.portfolio-more_hide');
 
 if (showPortfolio) {
     showPortfolio.addEventListener("click", function (y) {
-        disabledPortfolio.classList.toggle('_activePortfolio');
+        none.classList.toggle('_activePortfolio');
         showPortfolio.classList.toggle('_activeDropDown');
         changeText.classList.toggle('_none');
         changeTextShow.classList.toggle('_activePortfolio');
