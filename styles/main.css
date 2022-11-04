@@ -76,13 +76,11 @@
   font-size: 18px;
   font-weight: 600;
 }
-.portfolio a {
-  color: var(--T-color);
-}
 .portfolio-more {
   text-align: center;
   font-size: 14px;
   font-style: italic;
+  color: var(--T-color2);
 }
 .portfolio-more_hide {
   display: none;

@@ -199,7 +199,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --BG-color: white;
-    --T-color: black;
+    --T-color: #1b1b1d;
     --BG-color2: #F6F6F6;
     --T-color2: #828282;
     --BG-colorPreload:#F6F6F6;
