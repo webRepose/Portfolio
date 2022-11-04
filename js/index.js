@@ -87,29 +87,29 @@ window.addEventListener('load', ()=> {
     preloaderLock.classList.remove('_lock');
 })
 
-const pass = 'sd44D7DSA736sdDP5ILd'
+// const pass = 'sd44D7DSA736sdDP5ILd'
 
-const ContentSecurityPolicy = `
-    script-src 'report-sample' 'self' 'nonce-${pass}'; 
-    script-src-elem 'self' 'nonce-${pass}'; 
-    script-src-attr 'self';
-    style-src 'self' 'report-sample'; 
-    style-src-elem  'self'  'unsafe-inline'; 
-    style-src-attr 'self' 'unsafe-inline'; 
-    connect-src 'self';
-    base-uri 'none';
-    form-action 'self';
-    object-src 'none'; 
-    child-src 'none';
-    frame-src 'self';
-    img-src 'self' data: blob:;
-    manifest-src 'self';
-    prefetch-src 'self';
-    worker-src 'self';
-    font-src 'self';  
-    default-src 'self';
-    media-src 'self';
-    frame-ancestors 'self';
-    upgrade-insecure-requests;
-    report-uri https://webrepose.github.io/Portfolio/p;
-`;
+// const ContentSecurityPolicy = `
+//     script-src 'report-sample' 'self' 'nonce-${pass}'; 
+//     script-src-elem 'self' 'nonce-${pass}'; 
+//     script-src-attr 'self';
+//     style-src 'self' 'report-sample'; 
+//     style-src-elem  'self'  'unsafe-inline'; 
+//     style-src-attr 'self' 'unsafe-inline'; 
+//     connect-src 'self';
+//     base-uri 'none';
+//     form-action 'self';
+//     object-src 'none'; 
+//     child-src 'none';
+//     frame-src 'self';
+//     img-src 'self' data: blob:;
+//     manifest-src 'self';
+//     prefetch-src 'self';
+//     worker-src 'self';
+//     font-src 'self';  
+//     default-src 'self';
+//     media-src 'self';
+//     frame-ancestors 'self';
+//     upgrade-insecure-requests;
+//     report-uri https://webrepose.github.io/Portfolio/p;
+// `;

@@ -10,12 +10,14 @@
     <meta name="description" content="Hello!, I'm Daniel - Frontend developer from Kazakhstan. 
     I'm interested in programming and everything connected with it">
     <meta http-equiv="Cache-Control" content="max-age=31536000">
-    <!-- <meta http-equiv="Content-Security-Policy"
-        content="script-src-attr 'self';base-uri 'none';
+    <meta name="theme-color" content="hsl(240, 3%, 11%)" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="hsl(0, 0%, 100%)" media="(prefers-color-scheme: light)">
+    <meta http-equiv="Content-Security-Policy"
+    content="script-src-attr 'self';base-uri 'none';
     form-action 'self';object-src 'none';frame-src 'self';
     img-src 'self' data:;manifest-src 'self';prefetch-src 'self';worker-src 'self';
     style-src-attr 'self' 'unsafe-inline';media-src 'self';
-    upgrade-insecure-requests; script-src 'self' https://unpkg.com/swiper@8/swiper-bundle.min.js 'nonce-qwerty1234' 'unsafe-inline';"> -->
+    upgrade-insecure-requests; script-src 'self' https://unpkg.com/swiper@8/swiper-bundle.min.js 'nonce-qwerty1234' 'unsafe-inline';">
     <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
     <link rel="icon" href="./img/up3.webp" type="image/x-icon">
     <link rel="apple-touch-icon" href="../img/starG.webp">
@@ -68,10 +70,10 @@
                     <div></div>
                     <button title="EN" id="e-lang-en">ENG</button>
                 </div>
-                <div class="info-description">
+                <article class="info-description">
                     <h1 id="myname">Daniel Agalakov</h1>
                     <p id="myspecial">Frontend programmer</p>
-                </div>
+                </article>
             </section>
         </section>
         <section class="swip">
@@ -102,18 +104,22 @@
     <main>
         <section class="outer">
             <div class="inner">
-                <h2 id="AboutMe" class="about-title">About me</h2>
-                <p id="about-text" class="about-text">Hi, I'm Daniel – HTML/CSS/JS developer from Kazakhstan.
-                    I'm interested in programming and everything connected with it.</p>
-                <p id="about-text2" class="about-text">I'm studying at college "Computer Engineering" third course.
-                </p>
-                <p id="about-text3" class="about-text">Ready for great projects
-                    with wonderful people.</p>
+                <article>
+                    <h2 id="AboutMe" class="about-title">About me</h2>
+                    <p id="about-text" class="about-text">Hi, I'm Daniel – HTML/CSS/JS developer from Kazakhstan.
+                        I'm interested in programming and everything connected with it.</p>
+                    <p id="about-text2" class="about-text">I'm studying at college "Computer Engineering" third course.
+                    </p>
+                    <p id="about-text3" class="about-text">Ready for great projects
+                        with wonderful people.</p>
+                </article>
             </div>
         </section>
         <section class="inner">
-            <h2 id="Skills" class="about-title">Skills</h2>
-            <p id="skills-text" class="about-text">I work in such languages and tools as</p>
+            <article>
+                <h2 id="Skills" class="about-title">Skills</h2>
+                <p id="skills-text" class="about-text">I work in such languages and tools as</p>
+            </article>
             <div class="skills">
                 <div class="skills-sub">
                     <a id="HTML5" href="https://en.wikipedia.org/wiki/HTML5">
