@@ -4,12 +4,12 @@ self.addEventListener('install', async (event) => {
     const resCache = await caches.open(staticCacheName);
     await resCache.addAll([
         '/p.html',
-        '/js/index.js',
-        '/js/lang.js',
-        '/styles/style.css',
-        '/styles/adapt.css',
-        '/img',
-        '/icons',
+        // '/js/index.js',
+        // '/js/lang.js',
+        // '/styles/style.css',
+        // '/styles/adapt.css',
+        // '/img',
+        // '/icons',
     ]);
 })
 self.addEventListener('activate', async (event) => {
