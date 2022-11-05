@@ -95,6 +95,7 @@ window.addEventListener('load', async () => {
         }
     }
 })
+
 // const pass = 'sd44D7DSA736sdDP5ILd'
 
 // const ContentSecurityPolicy = `
