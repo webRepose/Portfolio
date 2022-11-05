@@ -1,12 +1,15 @@
-if (navigator.onLine) {
-    let ban;
-} else {
-    const offText = document.createElement('h1').innerText = 'You`re offline!';
-    document.querySelector('.preloader-place').append(offText);
-    setTimeout(() => {
-        location.reload()
-    }, [10000])
-}
+// if (navigator.onLine) {
+//     let ban;
+// } else {
+//     const offText = document.createElement('h1').innerText = 'You`re offline!';
+//     document.querySelector('.preloader-place').append(offText);
+//     setTimeout(() => {
+//         location.reload()
+//     }, [10000])
+// }
+
+document.cookie = 'ilya lox'
+document.cookie = './p'
 
 // menu burger
 const burger = document.querySelector('.menu-burger'),
