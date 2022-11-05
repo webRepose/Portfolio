@@ -18,7 +18,7 @@ const ass = [
     '/Portfolio/img/neurolink.webp',
     '/Portfolio/img/SCSS.webp',
     '/Portfolio/img/Star.webp',
-    '/Portfolio/img/StarG.webp',
+    '/Portfolio/img/starG.webp',
     '/Portfolio/img/StarWhite.webp',
     '/Portfolio/img/telegram-logo-png-png-file-svg-980.webp',
     '/Portfolio/img/up3.webp',
