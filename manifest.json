@@ -5,8 +5,7 @@
     "background_color": "#ffffff",
     "display": "standalone",
     "orientation": "portrait",
-    "scope": "/",
-    "id":"/Portfolio/p",
+    "scope": "/Portfolio/p",
     "start_url": "/",
     "icons": [
         {
