@@ -6,6 +6,7 @@
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
+    "id":"/Portfolio/p",
     "start_url": "/",
     "icons": [
         {
