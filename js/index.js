@@ -1,8 +1,18 @@
+if (navigator.onLine) {
+    let ban;
+} else {
+    const offText = document.createElement('h1').innerText = 'You`re offline!';
+    document.querySelector('.preloader-place').append(offText);
+    setTimeout(() => {
+        location.reload()
+    }, [10000])
+}
+
 // menu burger
-const burger = document.querySelector('.menu-burger');
-const menuMobile = document.querySelector('.menu-mobile');
-const scroll = document.querySelector('html,body');
-const select = document.querySelector('.info-select');
+const burger = document.querySelector('.menu-burger'),
+menuMobile = document.querySelector('.menu-mobile'),
+scroll = document.querySelector('html,body'),
+select = document.querySelector('.info-select');
 if (burger) {
     burger.addEventListener("click", function (e) {
         burger.classList.toggle('_activeBtn');
@@ -12,7 +22,7 @@ if (burger) {
     })
 }
 
-const links = document.querySelectorAll(".link")
+const links = document.querySelectorAll(".link");
 for (const item of links) {
     item.addEventListener('click', function (del) {
         burger.classList.remove('_activeBtn');
@@ -61,11 +71,11 @@ window.onscroll = function () {
 }
 
 // drop down fun portfolio work
-const showPortfolio = document.querySelector('.portfolio-dropDown');
-const none = document.querySelector('._none');
-const activeDropDown = document.querySelector('._activeDropDown');
-const changeText = document.querySelector('.portfolio-more');
-const changeTextShow = document.querySelector('.portfolio-more_hide');
+const showPortfolio = document.querySelector('.portfolio-dropDown'),
+none = document.querySelector('._none'),
+activeDropDown = document.querySelector('._activeDropDown'),
+changeText = document.querySelector('.portfolio-more'),
+changeTextShow = document.querySelector('.portfolio-more_hide');
 
 if (showPortfolio) {
     showPortfolio.addEventListener("click", function (y) {
@@ -79,9 +89,8 @@ if (showPortfolio) {
 
 // preloader
 
-const preloader = document.querySelector('.preloader');
-const preloaderLock = document.querySelector('html,body');
-preloaderLock.classList.add('_lock');
+const preloader = document.querySelector('.preloader'),
+preloaderLock = document.querySelector('html,body');
 window.addEventListener('load', ()=> {
     preloader.remove()
     preloaderLock.classList.remove('_lock');
