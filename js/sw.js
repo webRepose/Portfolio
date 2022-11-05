@@ -1,16 +1,17 @@
 const staticCacheName = 'v1';
+const ass = [
+    '/p.html',
+    '/js/index.js',
+    '/js/lang.js',
+    '/styles/style.css',
+    '/styles/adapt.css',
+    '/img',
+    '/icons',
+]
 
 self.addEventListener('install', async (event) => {
     const resCache = await caches.open(staticCacheName);
-    await resCache.addAll([
-        'p.html',
-        'js/index.js',
-        'js/lang.js',
-        'styles/style.css',
-        'styles/adapt.css',
-        'img',
-        'icons',
-    ]);
+    await resCache.addAll(ass);
 })
 self.addEventListener('activate', async (event) => {
    const cacheVers = await caches.keys()
