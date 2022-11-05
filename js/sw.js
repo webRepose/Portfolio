@@ -1,12 +1,12 @@
 const staticCacheName = 'v1';
 const ass = [
-    '/p.html',
-    '/js/index.js',
-    '/js/lang.js',
-    '/styles/style.css',
-    '/styles/adapt.css',
-    '/img',
-    '/icons',
+    '/Portfolio/p.html',
+    '/Portfolio/js/index.js',
+    '/Portfolio/js/lang.js',
+    '/Portfolio/styles/style.css',
+    '/Portfolio/styles/adapt.css',
+    '/Portfolio/img',
+    '/Portfolio/icons',
 ]
 
 self.addEventListener('install', async (event) => {
