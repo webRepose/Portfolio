@@ -1,16 +1,3 @@
-// if (navigator.onLine) {
-//     let ban;
-// } else {
-//     const offText = document.createElement('h1').innerText = 'You`re offline!';
-//     document.querySelector('.preloader-place').append(offText);
-//     setTimeout(() => {
-//         location.reload()
-//     }, [10000])
-// }
-
-document.cookie = 'ilya lox'
-document.cookie = './p'
-
 // menu burger
 const burger = document.querySelector('.menu-burger'),
 menuMobile = document.querySelector('.menu-mobile'),
@@ -34,7 +21,6 @@ for (const item of links) {
         select.classList.remove('_select');
     })
 }
-
 
 // swiper libary
 new Swiper('.swiper-container__png', {
@@ -99,6 +85,15 @@ window.addEventListener('load', ()=> {
     preloaderLock.classList.remove('_lock');
 })
 
+window.addEventListener('load', async () => {
+    if(navigator.serviceWorker) {
+        try {
+            await navigator.serviceWorker.register('js/sw.js');
+        } catch (e) {
+            console.log('v');
+        }
+    }
+})
 // const pass = 'sd44D7DSA736sdDP5ILd'
 
 // const ContentSecurityPolicy = `
