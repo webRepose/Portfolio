@@ -5,8 +5,8 @@ const ass = [
     '/Portfolio/js/lang.js',
     '/Portfolio/styles/style.css',
     '/Portfolio/styles/adapt.css',
-    '/Portfolio/img',
-    '/Portfolio/icons',
+    // '/Portfolio/img',
+    // '/Portfolio/icons',
 ]
 
 self.addEventListener('install', async (event) => {
