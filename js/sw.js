@@ -2,7 +2,7 @@ const staticCacheName = 'v1';
 
 self.addEventListener('install', async (event) => {
     const resCache = await caches.open(staticCacheName);
-    await resCache.add([
+    await resCache.addAll([
         'p.html',
         'js/index.js',
         'js/lang.js',
