@@ -6,7 +6,7 @@
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
-    "start_url": "./Portfolio/p",
+    "start_url": "./p",
     "icons": [
         {
             "src":"/Portfolio/icons/icon-48x48.png",
