@@ -89,9 +89,8 @@ window.addEventListener('load', async () => {
     if(navigator.serviceWorker) {
         try {
             await navigator.serviceWorker.register('sw.js');
-            console.log('ve');
         } catch (e) {
-            console.log('v');
+            let weQ;
         }
     }
 })
