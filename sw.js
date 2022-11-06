@@ -1,5 +1,5 @@
 const staticCacheName = 'v1';
-const ass = [
+const allCache = [
     '/Portfolio/p.html',
     '/Portfolio/js/index.js',
     '/Portfolio/js/lang.js',
@@ -36,7 +36,7 @@ const ass = [
 
 self.addEventListener('install', async (event) => {
     const resCache = await caches.open(staticCacheName);
-    await resCache.addAll(ass);
+    await resCache.addAll(allCache);
 })
 self.addEventListener('activate', async (event) => {
    const cacheVers = await caches.keys()
