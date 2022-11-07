@@ -56,6 +56,11 @@
     height: auto;
   }
 }
+@media (max-height: 886px) {
+  .skills-sub {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 767px) {
   .menu {
     height: 0px;
@@ -151,7 +156,6 @@
   }
   .skills-sub {
     padding-bottom: 50px;
-    margin: 0 auto;
   }
   .skills-lang {
     width: 139px;

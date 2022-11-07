@@ -80,4 +80,27 @@ body {
 
 ._activeDropDown div:last-child {
   transform: rotate(-50deg);
+}
+
+.Show-portfolio__anim {
+  -webkit-animation: 1s ban ease;
+          animation: 1s ban ease;
+}
+
+@-webkit-keyframes ban {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ban {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
