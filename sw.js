@@ -5,6 +5,8 @@ const allCache = [
     '/Portfolio/js/lang.js',
     '/Portfolio/styles/style.css',
     '/Portfolio/styles/adapt.css',
+    'https://unpkg.com/swiper@8/swiper-bundle.min.css',
+    'https://unpkg.com/swiper@8/swiper-bundle.min.js',
     '/Portfolio/img/1.webp',
     '/Portfolio/img/2.1.webp',
     '/Portfolio/img/3.1.webp',
