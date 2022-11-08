@@ -83,24 +83,36 @@ body {
 }
 
 .Show-portfolio__anim {
-  -webkit-animation: 1s ban ease;
-          animation: 1s ban ease;
+  -webkit-animation: 0.6s ban ease;
+          animation: 0.6s ban ease;
 }
 
 @-webkit-keyframes ban {
   0% {
     opacity: 0;
+    width: 0%;
+    height: auto;
+    margin: 0 auto;
   }
   100% {
     opacity: 1;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
 @keyframes ban {
   0% {
     opacity: 0;
+    width: 0%;
+    height: auto;
+    margin: 0 auto;
   }
   100% {
     opacity: 1;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
