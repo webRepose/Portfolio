@@ -2,6 +2,10 @@
   background-color: var(--BG-color2);
 }
 
+.About-wrapp {
+  padding-bottom: 120px;
+}
+
 .about-title {
   text-align: center;
   padding-top: 121px;
@@ -19,7 +23,6 @@
 }
 .about-text:last-child {
   margin-bottom: 0;
-  padding-bottom: 120px;
 }
 
 .skills {

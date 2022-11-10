@@ -95,29 +95,39 @@ window.addEventListener('load', async () => {
     }
 })
 
-// const pass = 'sd44D7DSA736sdDP5ILd'
 
-// const ContentSecurityPolicy = `
-//     script-src 'report-sample' 'self' 'nonce-${pass}'; 
-//     script-src-elem 'self' 'nonce-${pass}'; 
-//     script-src-attr 'self';
-//     style-src 'self' 'report-sample'; 
-//     style-src-elem  'self'  'unsafe-inline'; 
-//     style-src-attr 'self' 'unsafe-inline'; 
-//     connect-src 'self';
-//     base-uri 'none';
-//     form-action 'self';
-//     object-src 'none'; 
-//     child-src 'none';
-//     frame-src 'self';
-//     img-src 'self' data: blob:;
-//     manifest-src 'self';
-//     prefetch-src 'self';
-//     worker-src 'self';
-//     font-src 'self';  
-//     default-src 'self';
-//     media-src 'self';
-//     frame-ancestors 'self';
-//     upgrade-insecure-requests;
-//     report-uri https://webrepose.github.io/Portfolio/p;
-// `;
+let x1 = null;
+let y1 = null;
+document.addEventListener('touchstart', (e)=> {
+    const firstTouch = e.touches[0];
+    x1 = firstTouch.clientX;
+    y1 = firstTouch.clientY;
+}, false);
+
+document.addEventListener('touchmove', (e)=> {
+    if (!x1 || !y1) {
+        return false;
+    }
+    let x2 = e.touches[0].clientX;
+    let y2 = e.touches[0].clientY;
+    let xDifference = x2 - x1;
+    let yDifference = y2 - y1;
+
+    if(Math.abs(xDifference) > Math.abs(yDifference)) {
+        if(xDifference > 0) {
+            burger.classList.remove('_activeBtn');
+            menuMobile.classList.remove('_active');
+            scroll.classList.remove('_lock');
+            select.classList.remove('_select');
+        } else {
+            burger.classList.toggle('_activeBtn');
+            menuMobile.classList.toggle('_active');
+            select.classList.toggle('_select');
+            scroll.classList.toggle('_lock');
+        }
+    } 
+
+    x1 = null;
+    y1 = null;
+
+}, false);

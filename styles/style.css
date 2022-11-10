@@ -62,7 +62,7 @@ body {
   cursor: pointer;
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 13;
   padding: 15px;
 }
 
