@@ -67,7 +67,7 @@ body {
   height: 40px;
   border-radius: 50%;
   border: 2px solid #2e2e2e;
-  background-color: black;
+  background-color: #121111;
 }
 #upbutton article {
   display: flex;
