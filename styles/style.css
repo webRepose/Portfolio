@@ -57,13 +57,37 @@ body {
 }
 
 #upbutton {
-  bottom: 15px;
-  right: 15px;
+  bottom: 45px;
+  right: 35px;
   cursor: pointer;
   display: none;
   position: fixed;
   z-index: 13;
-  padding: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #2e2e2e;
+  background-color: black;
+}
+#upbutton article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+#upbutton div {
+  transform: rotate(50deg);
+  width: 1px;
+  height: 10px;
+  background-color: wheat;
+  position: relative;
+  border-radius: 20%;
+  left: -3.5px;
+}
+#upbutton div:last-child {
+  transform: rotate(-50deg);
+  left: 3px;
 }
 
 ._none {
