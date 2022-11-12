@@ -132,6 +132,6 @@ document.addEventListener('touchmove', (e)=> {
 
 }, false);
 
-if(navigator.userAgent.includes('Yandex') && navigator.userAgent.includes('Samsung Internet')) {
+if(navigator.userAgent.includes('YaBrowser') && navigator.userAgent.includes('Samsung Internet')) {
     document.querySelector('#upbuttonClick').remove()
 }
