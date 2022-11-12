@@ -132,7 +132,7 @@ document.addEventListener('touchmove', (e)=> {
 
 }, false);
 
-if(navigator.userAgent.includes('YaBrowser')) {
+if(navigator.userAgent.includes('Mobile')) {
     document.querySelector('#upbutton').classList.add('_none');
     console.log(545)
 } else if(navigator.userAgent.includes('SBrowser')){
