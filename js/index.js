@@ -133,7 +133,7 @@ document.addEventListener('touchmove', (e)=> {
 }, false);
 
 if(navigator.userAgent.includes('YaBrowser')) {
-    document.querySelector('#upbuttonClick').style.display='none';
+    document.querySelector('#upbuttonClick').classList.add('_lock');
 } else if(navigator.userAgent.includes('SBrowser')){
-    document.querySelector('#upbuttonClick').style.display='none';
+    document.querySelector('#upbuttonClick').classList.add('_lock');
 }
