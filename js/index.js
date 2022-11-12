@@ -134,6 +134,7 @@ document.addEventListener('touchmove', (e)=> {
 
 if(navigator.userAgent.includes('YaBrowser')) {
     document.querySelector('#upbutton').classList.add('_none');
+    console.log(545)
 } else if(navigator.userAgent.includes('SBrowser')){
     document.querySelector('#upbutton').classList.add('_none');
 }
