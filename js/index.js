@@ -3,24 +3,29 @@ const burger = document.querySelector('.menu-burger'),
 menuMobile = document.querySelector('.menu-mobile'),
 scroll = document.querySelector('html,body'),
 select = document.querySelector('.info-select');
-if (burger) {
-    burger.addEventListener("click", function (e) {
-        burger.classList.toggle('_activeBtn');
-        menuMobile.classList.toggle('_active');
-        select.classList.toggle('_select');
-        scroll.classList.toggle('_lock');
-    })
+
+function addBurger() {
+    burger.classList.toggle('_activeBtn');
+    menuMobile.classList.toggle('_active');
+    select.classList.toggle('_select');
+    scroll.classList.toggle('_lock');
 }
 
+function removeBurger() {
+    burger.classList.remove('_activeBtn');
+    menuMobile.classList.remove('_active');
+    scroll.classList.remove('_lock');
+    select.classList.remove('_select');
+}
+
+if (burger) {
+    burger.addEventListener("click", addBurger)
+}
 const links = document.querySelectorAll(".link");
 for (const item of links) {
-    item.addEventListener('click', function (del) {
-        burger.classList.remove('_activeBtn');
-        menuMobile.classList.remove('_active');
-        scroll.classList.remove('_lock');
-        select.classList.remove('_select');
-    })
+    item.addEventListener('click', removeBurger)
 }
+
 
 // swiper libary
 new Swiper('.swiper-container__png', {
@@ -115,15 +120,9 @@ document.addEventListener('touchmove', (e)=> {
 
     if(Math.abs(xDifference) > Math.abs(yDifference)) {
         if(xDifference > 0) {
-            burger.classList.remove('_activeBtn');
-            menuMobile.classList.remove('_active');
-            scroll.classList.remove('_lock');
-            select.classList.remove('_select');
+            removeBurger()
         } else {
-            burger.classList.toggle('_activeBtn');
-            menuMobile.classList.toggle('_active');
-            select.classList.toggle('_select');
-            scroll.classList.toggle('_lock');
+            addBurger()
         }
     } 
 

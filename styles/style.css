@@ -92,7 +92,7 @@ body {
 }
 
 ._none {
-  display: none !important;
+  display: none;
 }
 
 ._activePortfolio {
