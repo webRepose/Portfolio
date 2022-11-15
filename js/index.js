@@ -7,7 +7,7 @@ let observerLeft = new IntersectionObserver(
                 entry.target.setAttribute('data-left', '')
             }
         })
-}, {threshold: 0.7})
+}, {threshold: 0.7, rootMargin: '20px'})
 
 document.querySelectorAll('.left')
 .forEach((way) => observerLeft.observe(way))
@@ -21,7 +21,7 @@ let observerRight = new IntersectionObserver(
                 entry.target.setAttribute('data-right', '')
             }
         })
-}, {threshold: 0.01})
+}, {threshold: 0.01, rootMargin: '20px'})
 
 document.querySelectorAll('.right')
 .forEach((way) => observerRight.observe(way))
@@ -35,7 +35,7 @@ let observerUp = new IntersectionObserver(
                 entry.target.setAttribute('data-up', '')
             }
         })
-}, {threshold: 0.01})
+}, {threshold: 0.01, rootMargin: '20px' })
 
 document.querySelectorAll('.up')
 .forEach((way) => observerUp.observe(way))
