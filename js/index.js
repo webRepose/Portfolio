@@ -1,3 +1,47 @@
+// anim
+// LEFT
+let observerLeft = new IntersectionObserver(
+    (entries, observer)=> {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.setAttribute('data-left', '')
+            }
+        })
+}, {threshold: 0.7})
+
+document.querySelectorAll('.left')
+.forEach((way) => observerLeft.observe(way))
+
+// RIGHT
+
+let observerRight = new IntersectionObserver(
+    (entries, observer)=> {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.setAttribute('data-right', '')
+            }
+        })
+}, {threshold: 0.01})
+
+document.querySelectorAll('.right')
+.forEach((way) => observerRight.observe(way))
+
+// UP
+
+let observerUp = new IntersectionObserver(
+    (entries, observer)=> {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.setAttribute('data-up', '')
+            }
+        })
+}, {threshold: 0.01})
+
+document.querySelectorAll('.up')
+.forEach((way) => observerUp.observe(way))
+
+
+
 // menu burger
 const burger = document.querySelector('.menu-burger'),
 menuMobile = document.querySelector('.menu-mobile'),
@@ -55,7 +99,7 @@ new Swiper('.swiper-container__png', {
 });
 
 // up on click button
-window.onscroll = function () {
+window.onscroll = () => {
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if (scrolled > 500) {
         document.getElementById('upbutton').style.display = 'block';
@@ -72,13 +116,12 @@ changeText = document.querySelector('.portfolio-more'),
 changeTextShow = document.querySelector('.portfolio-more_hide');
 
 if (showPortfolio) {
-    showPortfolio.addEventListener("click", function (y) {
+    showPortfolio.addEventListener("click", (y) => {
         none.classList.toggle('_activePortfolio');
         showPortfolio.classList.toggle('_activeDropDown');
         changeText.classList.toggle('_none');
         changeTextShow.classList.toggle('_activePortfolio');
-    }
-    )
+    })
 }
 
 // preloader
@@ -90,6 +133,8 @@ window.addEventListener('load', ()=> {
     preloaderLock.classList.remove('_lock');
 })
 
+// Service worker
+
 window.addEventListener('load', async () => {
     if(navigator.serviceWorker) {
         try {
@@ -100,6 +145,7 @@ window.addEventListener('load', async () => {
     }
 })
 
+// swipe menu
 
 let x1 = null;
 let y1 = null;
@@ -130,10 +176,3 @@ document.addEventListener('touchmove', (e)=> {
     y1 = null;
 
 }, false);
-
-// if(navigator.userAgent.includes('Mobile')) {
-//     document.querySelector('#upbutton').classList.add('_none');
-//     console.log(545)
-// } else if(navigator.userAgent.includes('SBrowser')){
-//     document.querySelector('#upbutton').classList.add('_none');
-// }

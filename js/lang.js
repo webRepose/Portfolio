@@ -13,7 +13,7 @@ const txt = {
         'about-text2': 'I"m studying at college "Computer Engineering" third course.',
         'about-text3': 'Ready for great projects with wonderful people.',
         'Skills': 'Skills',
-        'skills-text': 'I work in such languages and tools as',
+        'skills-text': 'I work in such languages and tools as:',
         'Portfolio': 'Portfolio',
         'portfolio-more': 'More',
         'portfolio-more2': 'Hide',
@@ -37,7 +37,7 @@ const txt = {
         'about-text2': 'Я учусь в колледже на "Информационные Технологии" третий курс.',
         'about-text3': 'Готов для отличных проектов с прекрасными людьми.',
         'Skills': 'Навыки',
-        'skills-text': 'Я работаю с такими языками и инструментами как',
+        'skills-text': 'Я работаю с такими языками и инструментами как:',
         'Portfolio': 'Портфолио',
         'portfolio-more': 'Еще',
         'portfolio-more2': 'Скрыть',
@@ -55,19 +55,23 @@ document.getElementById('e-lang-ru').addEventListener('click', setLang.bind(null
 
 function setLang(lang){
   var p;
-  if( !txt.hasOwnProperty(lang)) return;
-  if( window.hasOwnProperty('localStorage'))
+  if(!txt.hasOwnProperty(lang)) return;
+  if(window.hasOwnProperty('localStorage'))
      window.localStorage.setItem('lang', lang);
   for(p in txt[lang]) {
     document.getElementById(p).innerText = txt[lang][p];
   }
 }
 
+// lang auto
+if(navigator.language == 'ru-RU') {
+  window.localStorage.setItem('lang', 'ru');
+} else {
+  window.localStorage.setItem('lang', 'en');
+}
+
 var lang = (window.hasOwnProperty('localStorage') && window.localStorage.getItem('lang', lang)) || 'en';
 setLang(lang);
-
-var userLang = navigator.language || navigator.userLanguage; 
-
 
 // Ie to Edge
 const ua = window.navigator.userAgent;
@@ -93,6 +97,7 @@ function ruTitle() {
   document.querySelector('#contacts-message').setAttribute('title', 'Отправить сообщение');
   document.querySelector('.portfolio-dropDown').setAttribute('title', 'Посмотреть еще!');
   document.querySelector('html').setAttribute('lang', 'ru');
+  document.querySelector('#upbutton').setAttribute('title', 'вверх');
 }
 function enTitle() {
   document.querySelector('#home').setAttribute('title', 'Home');
@@ -107,6 +112,7 @@ function enTitle() {
   document.querySelector('#contacts-message').setAttribute('title', 'Send message');
   document.querySelector('.portfolio-dropDown').setAttribute('title', 'View more!');
   document.querySelector('html').setAttribute('lang', 'en');
+  document.querySelector('#upbutton').setAttribute('title', 'up');
 }
 
 if(lang == 'en') {
