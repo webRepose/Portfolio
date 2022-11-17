@@ -94,7 +94,8 @@ function ruTitle() {
   document.querySelector('#CSS3').setAttribute('href', 'https://ru.wikipedia.org/wiki/CSS');
   document.querySelector('#SCSS').setAttribute('href', 'https://ru.wikipedia.org/wiki/Sass');
   document.querySelector('#GIT').setAttribute('href', 'https://ru.wikipedia.org/wiki/GitLab');
-  document.querySelector('#JS').setAttribute('href', 'https://ru.wikipedia.org/wiki/Adobe_XD');
+  document.querySelector('#JS').setAttribute('href', 'https://ru.wikipedia.org/wiki/JavaScript');
+  document.querySelector('#XD').setAttribute('href', 'https://ru.wikipedia.org/wiki/Adobe_XD');
   document.querySelector('#contacts-message').setAttribute('title', 'Отправить сообщение');
   document.querySelector('.portfolio-dropDown').setAttribute('title', 'Посмотреть еще!');
   document.querySelector('html').setAttribute('lang', 'ru');
