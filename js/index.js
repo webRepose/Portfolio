@@ -4,13 +4,13 @@ let observerLeft = new IntersectionObserver(
     (entries, observer)=> {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.setAttribute('data-left', '')
+                entry.target.setAttribute('data-left', '');
             }
         })
-}, {threshold: 0.7, rootMargin: '20px'})
+}, {threshold: 0.7, rootMargin: '20px'});
 
 document.querySelectorAll('.left')
-.forEach((way) => observerLeft.observe(way))
+.forEach((way) => observerLeft.observe(way));
 
 // RIGHT
 
@@ -18,13 +18,13 @@ let observerRight = new IntersectionObserver(
     (entries, observer)=> {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.setAttribute('data-right', '')
+                entry.target.setAttribute('data-right', '');
             }
         })
-}, {threshold: 0.01, rootMargin: '20px'})
+}, {threshold: 0.01, rootMargin: '20px'});
 
 document.querySelectorAll('.right')
-.forEach((way) => observerRight.observe(way))
+.forEach((way) => observerRight.observe(way));
 
 // UP
 
@@ -32,13 +32,13 @@ let observerUp = new IntersectionObserver(
     (entries, observer)=> {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.setAttribute('data-up', '')
+                entry.target.setAttribute('data-up', '');
             }
         })
-}, {threshold: 0.01, rootMargin: '20px' })
+}, {threshold: 0.01, rootMargin: '20px' });
 
 document.querySelectorAll('.up')
-.forEach((way) => observerUp.observe(way))
+.forEach((way) => observerUp.observe(way));
 
 
 
@@ -63,11 +63,11 @@ function removeBurger() {
 }
 
 if (burger) {
-    burger.addEventListener("click", addBurger)
+    burger.addEventListener("click", addBurger);
 }
 const links = document.querySelectorAll(".link");
 for (const item of links) {
-    item.addEventListener('click', removeBurger)
+    item.addEventListener('click', removeBurger);
 }
 
 
@@ -166,9 +166,9 @@ document.addEventListener('touchmove', (e)=> {
 
     if(Math.abs(xDifference) > Math.abs(yDifference)) {
         if(xDifference > 0) {
-            removeBurger()
+            removeBurger();
         } else {
-            addBurger()
+            addBurger();
         }
     } 
 

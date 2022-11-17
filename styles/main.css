@@ -26,11 +26,11 @@
 }
 
 .skills {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   width: 100%;
   height: auto;
   margin: 63px 0 120px 0;
-  flex-wrap: wrap;
 }
 .skills-lang {
   width: 89px;
@@ -53,12 +53,12 @@
 .skills-rating {
   display: flex;
   margin: 40px auto 0 auto;
-  width: 150px;
+  width: 160px;
+  justify-content: space-between;
 }
 .skills-rating img {
   width: 26px;
   height: auto;
-  margin-right: 9px;
 }
 .skills-rating img:last-child {
   margin-right: 0;

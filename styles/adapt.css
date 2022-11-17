@@ -49,6 +49,7 @@
   }
   .skills {
     margin-bottom: 60px;
+    grid-template-columns: auto auto auto;
   }
   .portfolio-screen {
     margin: 44px auto;
@@ -156,6 +157,9 @@
     margin-top: 29px;
     font-size: 23px;
   }
+  .skills {
+    grid-template-columns: auto auto;
+  }
   .skills-sub {
     padding-bottom: 50px;
   }
@@ -163,17 +167,35 @@
     width: 139px;
     height: auto;
   }
+  .contacts {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .skills-sub {
+    width: auto;
+  }
+  .skills-lang {
+    width: 89px;
+  }
+  .skills-rating {
+    width: 130px;
+  }
   .skills-rating img {
     width: 22px;
     height: auto;
-  }
-  .contacts {
-    margin-bottom: 60px;
   }
 }
 @media (max-width: 360px) {
   #upbutton {
     right: 10px;
+  }
+  .skills-rating {
+    width: 120px;
+  }
+  .skills-rating img {
+    width: 20px;
+    height: auto;
   }
 }
 @media (max-width: 320px) {
