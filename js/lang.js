@@ -1,3 +1,4 @@
+'use strict';
 const txt = {
     en: {
         'title':'Daniel Agalakov',

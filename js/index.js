@@ -1,3 +1,4 @@
+'use strict';
 // anim
 // LEFT
 let observerLeft = new IntersectionObserver(
@@ -7,10 +8,11 @@ let observerLeft = new IntersectionObserver(
                 entry.target.setAttribute('data-left', '');
             }
         })
-}, {threshold: 0.7, rootMargin: '20px'});
+}, {threshold: 0.7, rootMargin: '40px'});
 
-document.querySelectorAll('.left')
-.forEach((way) => observerLeft.observe(way));
+for (let item of document.querySelectorAll('.left')) {
+        observerLeft.observe(item);
+}
 
 // RIGHT
 
@@ -21,10 +23,11 @@ let observerRight = new IntersectionObserver(
                 entry.target.setAttribute('data-right', '');
             }
         })
-}, {threshold: 0.01, rootMargin: '20px'});
+}, {threshold: 0.01, rootMargin: '40px'});
 
-document.querySelectorAll('.right')
-.forEach((way) => observerRight.observe(way));
+for (let item of document.querySelectorAll('.right')) {
+        observerRight.observe(item);
+}
 
 // UP
 
@@ -35,12 +38,11 @@ let observerUp = new IntersectionObserver(
                 entry.target.setAttribute('data-up', '');
             }
         })
-}, {threshold: 0.01, rootMargin: '20px' });
+}, {threshold: 0.01, rootMargin: '40px' });
 
-document.querySelectorAll('.up')
-.forEach((way) => observerUp.observe(way));
-
-
+for (let item of document.querySelectorAll('.up')) {
+        observerUp.observe(item);
+}
 
 // menu burger
 const burger = document.querySelector('.menu-burger'),

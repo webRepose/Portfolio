@@ -46,7 +46,6 @@ body {
   background-color: var(--BG-color3);
   -webkit-background-color: var(--BG-color3);
   color: var(--T-color);
-  font-display: optional;
 }
 
 ._lock {
