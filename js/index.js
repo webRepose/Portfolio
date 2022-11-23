@@ -8,7 +8,7 @@ let observerLeft = new IntersectionObserver(
                 entry.target.setAttribute('data-left', '');
             }
         })
-}, {threshold: 0.7, rootMargin: '40px'});
+}, {threshold: 0.7, rootMargin: '30px'});
 
 for (let item of document.querySelectorAll('.left')) {
         observerLeft.observe(item);
@@ -23,7 +23,7 @@ let observerRight = new IntersectionObserver(
                 entry.target.setAttribute('data-right', '');
             }
         })
-}, {threshold: 0.01, rootMargin: '40px'});
+}, {threshold: 0.01, rootMargin: '30px'});
 
 for (let item of document.querySelectorAll('.right')) {
         observerRight.observe(item);
@@ -38,7 +38,7 @@ let observerUp = new IntersectionObserver(
                 entry.target.setAttribute('data-up', '');
             }
         })
-}, {threshold: 0.01, rootMargin: '40px' });
+}, {threshold: 0.01, rootMargin: '30px' });
 
 for (let item of document.querySelectorAll('.up')) {
         observerUp.observe(item);
