@@ -131,8 +131,10 @@ const enClick = document.getElementById('e-lang-en');
 
 enClick.addEventListener('click', ()=> {
   enTitle();
+  removeBurger();
 })
 ruClick.addEventListener('click', ()=> {
   ruTitle();
+  removeBurger();
 })
 
