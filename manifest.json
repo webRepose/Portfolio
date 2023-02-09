@@ -5,7 +5,7 @@
     "background_color": "#202124",
     "display": "standalone",
     "orientation": "portrait",
-    "start_url": "./p",
+    "start_url": "./",
     "icons": [
         {
             "src":"/Portfolio/icons/android-launchericon-48-48.png",
