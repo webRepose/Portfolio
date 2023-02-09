@@ -97,6 +97,7 @@ function ruTitle() {
   document.querySelector('#GIT').setAttribute('href', 'https://ru.wikipedia.org/wiki/GitLab');
   document.querySelector('#JS').setAttribute('href', 'https://ru.wikipedia.org/wiki/JavaScript');
   document.querySelector('#XD').setAttribute('href', 'https://ru.wikipedia.org/wiki/Adobe_XD');
+  document.querySelector('#React').setAttribute('href', 'https://ru.wikipedia.org/wiki/React');
   document.querySelector('#contacts-message').setAttribute('title', 'Отправить сообщение');
   document.querySelector('.portfolio-dropDown').setAttribute('title', 'Посмотреть еще!');
   document.querySelector('html').setAttribute('lang', 'ru');
@@ -114,6 +115,7 @@ function enTitle() {
   document.querySelector('#GIT').setAttribute('href', 'https://en.wikipedia.org/wiki/GitLab');
   document.querySelector('#JS').setAttribute('href', 'https://en.wikipedia.org/wiki/JavaScript');
   document.querySelector('#XD').setAttribute('href', 'https://en.wikipedia.org/wiki/Adobe_XD');
+  document.querySelector('#React').setAttribute('href', 'https://en.wikipedia.org/wiki/React_(JavaScript_library)');
   document.querySelector('#contacts-message').setAttribute('title', 'Send message');
   document.querySelector('.portfolio-dropDown').setAttribute('title', 'View more!');
   document.querySelector('html').setAttribute('lang', 'en');

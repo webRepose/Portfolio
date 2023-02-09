@@ -1,21 +1,5 @@
 .Show-portfolio__anim {
-  -webkit-animation: 0.6s showPortfolio ease;
   animation: 0.6s showPortfolio ease;
-}
-
-@-webkit-keyframes showPortfolio {
-  0% {
-    opacity: 0;
-    width: 0%;
-    height: auto;
-    margin: 0 auto;
-  }
-  100% {
-    opacity: 1;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
 }
 @keyframes showPortfolio {
   0% {
@@ -29,19 +13,6 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-  }
-}
-@-webkit-keyframes animScrollLeft {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    display: block;
-    transform: translateX(0px);
-    opacity: 1;
-    visibility: visible;
   }
 }
 @keyframes animScrollLeft {
@@ -58,22 +29,7 @@
   }
 }
 [data-left] {
-  -webkit-animation: 1.3s animScrollLeft ease;
   animation: 1.3s animScrollLeft ease;
-}
-
-@-webkit-keyframes animScrollRight {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    display: block;
-    transform: translateX(0px);
-    opacity: 1;
-    visibility: visible;
-  }
 }
 @keyframes animScrollRight {
   0% {
@@ -89,22 +45,7 @@
   }
 }
 [data-right] {
-  -webkit-animation: 1.3s animScrollRight ease;
   animation: 1.3s animScrollRight ease;
-}
-
-@-webkit-keyframes animScrollUp {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    display: block;
-    transform: translateY(0px);
-    opacity: 1;
-    visibility: visible;
-  }
 }
 @keyframes animScrollUp {
   0% {
@@ -120,6 +61,5 @@
   }
 }
 [data-up] {
-  -webkit-animation: 1.3s animScrollUp ease;
   animation: 1.3s animScrollUp ease;
 }/*# sourceMappingURL=anim.css.map */

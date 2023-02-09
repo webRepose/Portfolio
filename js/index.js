@@ -131,7 +131,7 @@ if (showPortfolio) {
 const preloader = document.querySelector('.preloader'),
 preloaderLock = document.querySelector('html,body');
 window.addEventListener('load', ()=> {
-    preloader.remove()
+    preloader.remove();
     preloaderLock.classList.remove('_lock');
 })
 
@@ -142,7 +142,7 @@ window.addEventListener('load', async () => {
         try {
             await navigator.serviceWorker.register('sw.js');
         } catch (e) {
-            let weQ;
+            console.log('Error');
         }
     }
 })

@@ -49,7 +49,6 @@
   }
   .skills {
     margin-bottom: 60px;
-    -ms-grid-columns: auto auto auto;
     grid-template-columns: auto auto auto;
   }
   .portfolio-screen {
@@ -159,7 +158,6 @@
     font-size: 23px;
   }
   .skills {
-    -ms-grid-columns: auto auto;
     grid-template-columns: auto auto;
   }
   .skills-sub {

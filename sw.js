@@ -1,6 +1,6 @@
 const staticCacheName = 'v1';
 const allCache = [
-    '/Portfolio/p.html',
+    '/Portfolio/index.html',
     '/Portfolio/js/index.js',
     '/Portfolio/js/lang.js',
     '/Portfolio/styles/style.css',
