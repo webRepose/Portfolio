@@ -16,8 +16,8 @@ const txt = {
         'Skills': 'Skills',
         'skills-text': 'I work in such languages and tools as:',
         'Portfolio': 'Portfolio',
-        'portfolio-more': 'More',
-        'portfolio-more2': 'Hide',
+        // 'portfolio-more': 'More',
+        // 'portfolio-more2': 'Hide',
         'contacts2': 'Contacts',
         'like': 'Like me on Telegram, Vk, GitHub',
         'contacts-text': 'Want to know more or just chat?',
@@ -40,8 +40,8 @@ const txt = {
         'Skills': 'Навыки',
         'skills-text': 'Я работаю с такими языками и инструментами как:',
         'Portfolio': 'Портфолио',
-        'portfolio-more': 'Еще',
-        'portfolio-more2': 'Скрыть',
+        // 'portfolio-more': 'Еще',
+        // 'portfolio-more2': 'Скрыть',
         'contacts2': 'Контакты',
         'like': 'Мой Telegram, Vk, GitHub',
         'contacts-text': 'Хотите узнать больше или просто по общаться?',
@@ -99,7 +99,7 @@ function ruTitle() {
   document.querySelector('#XD').setAttribute('href', 'https://ru.wikipedia.org/wiki/Adobe_XD');
   document.querySelector('#React').setAttribute('href', 'https://ru.wikipedia.org/wiki/React');
   document.querySelector('#contacts-message').setAttribute('title', 'Отправить сообщение');
-  document.querySelector('.portfolio-dropDown').setAttribute('title', 'Посмотреть еще!');
+  // document.querySelector('.portfolio-dropDown').setAttribute('title', 'Посмотреть еще!');
   document.querySelector('html').setAttribute('lang', 'ru');
   document.querySelector('#upbutton').setAttribute('title', 'вверх');
 }
@@ -117,7 +117,7 @@ function enTitle() {
   document.querySelector('#XD').setAttribute('href', 'https://en.wikipedia.org/wiki/Adobe_XD');
   document.querySelector('#React').setAttribute('href', 'https://en.wikipedia.org/wiki/React_(JavaScript_library)');
   document.querySelector('#contacts-message').setAttribute('title', 'Send message');
-  document.querySelector('.portfolio-dropDown').setAttribute('title', 'View more!');
+  // document.querySelector('.portfolio-dropDown').setAttribute('title', 'View more!');
   document.querySelector('html').setAttribute('lang', 'en');
   document.querySelector('#upbutton').setAttribute('title', 'up');
 }
