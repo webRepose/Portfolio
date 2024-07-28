@@ -1,0 +1,39 @@
+.contacts {
+  padding-bottom: 120px;
+}
+.contacts p {
+  font-size: 16px;
+  color: #828282;
+  text-align: center;
+}
+
+.contacts-message {
+  width: 180px;
+  height: 52px;
+  border-radius: 30px;
+  border: 0;
+  background-color: black;
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+  margin: 10px auto 0 auto;
+  cursor: pointer;
+}
+.contacts-message a {
+  color: white;
+}
+.contacts-message a:hover {
+  color: white;
+}
+
+.contacts-socials {
+  max-width: 202px;
+  height: 41px;
+  margin: 25px auto 62px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-socials img {
+  width: 40px;
+  height: auto;
+}/*# sourceMappingURL=footer.css.map */
